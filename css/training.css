@@ -1,3 +1,31 @@
+@font-face {
+    font-family: DIN-LIGHT;
+    src: url(../fonts/DINNEXTLTARABIC-LIGHT.ttf);
+}
+@font-face {
+    font-family: DIN-MEDIUM;
+    src: url(../fonts/DIN-NEXT-LT-W23-MEDIUM.otf);
+}
+body{
+    direction: rtl
+}
+nav .nav{
+    justify-content: space-around !important;
+}
+.nav .nav-link {
+    color: #a1a2a2;
+    font-family:   DIN-LIGHT;
+}
+.nav .nav-link.active{
+    color:#027ffc;
+    border-bottom: 2px solid #027ffc;
+    font-family:  DIN-MEDIUM;
+}
+.search-box .search-box-input{
+    width: 77%;
+    display: block;
+    margin: 30px auto;
+}
 .class{
     background-color: antiquewhite;
 }
