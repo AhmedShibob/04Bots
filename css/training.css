@@ -6,9 +6,6 @@
     font-family: DIN-MEDIUM;
     src: url(../fonts/DIN-NEXT-LT-W23-MEDIUM.otf);
 }
-body{
-    direction: rtl
-}
 nav .nav{
     justify-content: space-around !important;
 }
@@ -25,6 +22,64 @@ nav .nav{
     width: 77%;
     display: block;
     margin: 30px auto;
+}
+/*mycourses-actual*/
+.mycourses-actual{
+margin-top: 20px;
+}
+.mycourses-actual .mycourses-actual-header{
+    background: #f1f1f1;
+    font-family: DIN-MEDIUM;
+
+}
+.mycourses-actual .mycourses-actual-header .btn{
+    width: 100%;
+    text-decoration: none;
+    text-align: right
+}
+.mycourses-actual .mycourses-actual-header .icon{
+    float: left;
+}
+.mycourses-actual-header i{
+    -webkit-transition: all .4s ease-in-out 0s;
+    -moz-transition: all .4s ease-in-out 0s;
+    -o-transition: all .4s ease-in-out 0s;
+    transition: all .4s ease-in-out 0s;
+}
+.mycourses-actual-header.active i{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.mycourses-actual-item  .mycourses-cart{
+    margin: 25px;
+    overflow: hidden;
+}
+.mycourses-actual-item  .mycourses-cart img{
+    height: 75px;
+    width: auto
+}
+.mycourses-actual-item  .mycourses-cart-details{
+    margin-right: 20px
+}
+.mycourses-actual-item  .mycourses-cart-details h6{
+    color: #027ffc;
+    font-family: DIN-MEDIUM;
+}
+.mycourses-actual-item  .mycourses-cart-details span{
+    display: block;
+    color: #a1a2a2;
+    font-size: 12px
+}
+.starrr {
+    display: block; 
+    float: right;
+}
+.starrr a {
+    font-size: 10px;
+    padding: 0 1px;
+    cursor: pointer;
+    color: #FFD119;
+    text-decoration: none; 
 }
 .class{
     background-color: antiquewhite;
