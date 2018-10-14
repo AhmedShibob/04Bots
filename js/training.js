@@ -7,8 +7,8 @@ var slice = [].slice;
       rating: void 0,
       max: 5,
       readOnly: false,
-      emptyClass: 'fa fa-star-o',
-      fullClass: 'fa fa-star',
+      emptyClass: 'far fa-star',
+      fullClass: 'fas fa-star',
       change: function(e, value) {}
     };
 
@@ -98,5 +98,8 @@ var slice = [].slice;
 })(window.jQuery, window);
 $('.starrr').starrr({
     rating: 4
-})
+});
+$(".mycourses-gray-header").on('click' ,function(){
+  $(this).toggleClass("mycourses-header-active")
+});
 

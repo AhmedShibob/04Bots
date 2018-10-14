@@ -13,8 +13,10 @@ nav .nav{
     color: #a1a2a2;
     font-family:   DIN-LIGHT;
 }
-.nav .nav-link.active{
+.nav .nav-link.active,.btn-link:hover{
     color:#027ffc;
+}
+.nav .nav-link.active{
     border-bottom: 2px solid #027ffc;
     font-family:  DIN-MEDIUM;
 }
@@ -27,26 +29,28 @@ nav .nav{
 .mycourses-actual{
 margin-top: 20px;
 }
-.mycourses-actual .mycourses-actual-header{
+/*mycourses-gray-header*/
+.mycourses-gray-header{
     background: #f1f1f1;
     font-family: DIN-MEDIUM;
+    margin-bottom: 15px;
 
 }
-.mycourses-actual .mycourses-actual-header .btn{
+.mycourses-gray-header .btn{
     width: 100%;
     text-decoration: none;
     text-align: right
 }
-.mycourses-actual .mycourses-actual-header .icon{
+.mycourses-gray-header .icon{
     float: left;
 }
-.mycourses-actual-header i{
+.mycourses_gary_header i{
     -webkit-transition: all .4s ease-in-out 0s;
     -moz-transition: all .4s ease-in-out 0s;
     -o-transition: all .4s ease-in-out 0s;
     transition: all .4s ease-in-out 0s;
 }
-.mycourses-actual-header.active i{
+.mycourses-gray-header.mycourses-header-active i{
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
@@ -55,11 +59,13 @@ margin-top: 20px;
     overflow: hidden;
 }
 .mycourses-actual-item  .mycourses-cart img{
-    height: 75px;
+    height: 100%;
+    max-height: 90px;
     width: auto
 }
 .mycourses-actual-item  .mycourses-cart-details{
-    margin-right: 20px
+    margin-right: 20px;
+    padding: 5px 0;
 }
 .mycourses-actual-item  .mycourses-cart-details h6{
     color: #027ffc;
@@ -80,6 +86,34 @@ margin-top: 20px;
     cursor: pointer;
     color: #FFD119;
     text-decoration: none; 
+}
+/*progress-courses-item*/
+.progress-courses-item  .mycourses-cart-details span,.progress-courses-item .starrr{
+    display: inline;
+    float: none
+}
+.mycourses-cart-details .progress {
+    width: 80%;
+    height: 8px;
+    margin: 5px auto;
+    border-radius: 22px;
+
+}
+.mycourses-cart-details  p{
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.progress-courses-item .mycourses-cart-details h6{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.progress-courses-item .mycourses-cart-details span{
+    font-size: 11px
+
+}
+.progress-courses-item .mycourses-cart-details .starrr a{
+    font-size: 7px;
 }
 .class{
     background-color: antiquewhite;
