@@ -84,3 +84,84 @@ margin-top: 20px;
 .class{
     background-color: antiquewhite;
 }
+
+/*============== Start Style for upcoming and monthly events ===================*/
+/*start agenda-events*/
+.box-shadow {
+    -wbkit-box-shadow: 0 3px 10px #dddddd;
+    -webkit-box-shadow: 0 3px 10px #dddddd;
+            box-shadow: 0 3px 10px #dddddd;
+    border-radius: 8px;
+  }
+
+  .events-section {
+      margin-top: 330px;
+      width: 90%;
+      margin-right: 20px;
+  }
+  
+  .agenda-events {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .agenda-events .title-agenda-event {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 0; 
+    font-weight: bold;
+    font-family: DIN-LIGHT;
+  }
+  
+  .agenda-events .agenda-event {
+    padding: 25px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-right: 0!important
+  }
+  
+  .agenda-events .agenda-event:last-of-type {
+    border: 0;
+  }
+  
+  .agenda-events .avatar {
+    width: 60px;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  
+  .agenda-events .avatar img {
+    border-radius: 50%;
+    height: 60px;
+  }
+  
+  .agenda-events .details-event {
+    margin-top: 8px
+  }
+  
+  .agenda-events .details-event h5 {
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: #4e4e4e;
+    font-family: DIN-MEDIUM;
+  }
+  
+  .agenda-events .details-event p {
+    font-size: 10px;
+    color: #4e4e4e;
+    margin-bottom: 0;
+  }
+  
+  .agenda-events .time-event {
+    color: #4e4e4e;
+    font-size: 13px;
+  }
+  
+  .agenda-events .time-event i {
+    color: #ff5700;
+    font-size: 8px;
+  }
+  /*end agenda-events*/
+/*============== End Style for upcoming and monthly events ===================*/
