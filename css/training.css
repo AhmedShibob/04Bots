@@ -1,0 +1,120 @@
+@font-face {
+    font-family: DIN-LIGHT;
+    src: url(../fonts/DINNEXTLTARABIC-LIGHT.ttf);
+}
+@font-face {
+    font-family: DIN-MEDIUM;
+    src: url(../fonts/DIN-NEXT-LT-W23-MEDIUM.otf);
+}
+nav .nav{
+    justify-content: space-around !important;
+}
+.nav .nav-link {
+    color: #a1a2a2;
+    font-family:   DIN-LIGHT;
+}
+.nav .nav-link.active,.btn-link:hover{
+    color:#027ffc;
+}
+.nav .nav-link.active{
+    border-bottom: 2px solid #027ffc;
+    font-family:  DIN-MEDIUM;
+}
+.search-box .search-box-input{
+    width: 77%;
+    display: block;
+    margin: 30px auto;
+}
+/*mycourses-actual*/
+.mycourses-actual{
+margin-top: 20px;
+}
+/*mycourses-gray-header*/
+.mycourses-gray-header{
+    background: #f1f1f1;
+    font-family: DIN-MEDIUM;
+    margin-bottom: 15px;
+
+}
+.mycourses-gray-header .btn{
+    width: 100%;
+    text-decoration: none;
+    text-align: right
+}
+.mycourses-gray-header .icon{
+    float: left;
+}
+.mycourses_gary_header i{
+    -webkit-transition: all .4s ease-in-out 0s;
+    -moz-transition: all .4s ease-in-out 0s;
+    -o-transition: all .4s ease-in-out 0s;
+    transition: all .4s ease-in-out 0s;
+}
+.mycourses-gray-header.mycourses-header-active i{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.mycourses-actual-item  .mycourses-cart{
+    margin: 25px;
+    overflow: hidden;
+}
+.mycourses-actual-item  .mycourses-cart img{
+    height: 100%;
+    max-height: 90px;
+    width: auto
+}
+.mycourses-actual-item  .mycourses-cart-details{
+    margin-right: 20px;
+    padding: 5px 0;
+}
+.mycourses-actual-item  .mycourses-cart-details h6{
+    color: #027ffc;
+    font-family: DIN-MEDIUM;
+}
+.mycourses-actual-item  .mycourses-cart-details span{
+    display: block;
+    color: #a1a2a2;
+    font-size: 12px
+}
+.starrr {
+    display: block; 
+    float: right;
+}
+.starrr a {
+    font-size: 10px;
+    padding: 0 1px;
+    cursor: pointer;
+    color: #FFD119;
+    text-decoration: none; 
+}
+/*progress-courses-item*/
+.progress-courses-item  .mycourses-cart-details span,.progress-courses-item .starrr{
+    display: inline;
+    float: none
+}
+.mycourses-cart-details .progress {
+    width: 80%;
+    height: 8px;
+    margin: 5px auto;
+    border-radius: 22px;
+
+}
+.mycourses-cart-details  p{
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.progress-courses-item .mycourses-cart-details h6{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.progress-courses-item .mycourses-cart-details span{
+    font-size: 11px
+
+}
+.progress-courses-item .mycourses-cart-details .starrr a{
+    font-size: 7px;
+}
+.class{
+    background-color: antiquewhite;
+}

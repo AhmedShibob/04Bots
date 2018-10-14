@@ -1,7 +1,6 @@
-@import url('../assets/fonts/myFirstFont.ttf');
 
-*{
-    font-family: myFirstFont;
+body{
+    direction:rtl;
+    text-align: right;
+    font-family:sans-serif,DIN-LIGHT;
 }
-
-
