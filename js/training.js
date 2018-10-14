@@ -6,7 +6,7 @@ var slice = [].slice;
     Starrr.prototype.defaults = {
       rating: void 0,
       max: 5,
-      readOnly: false,
+      readOnly: true,
       emptyClass: 'far fa-star',
       fullClass: 'fas fa-star',
       change: function(e, value) {}
@@ -102,4 +102,11 @@ $('.starrr').starrr({
 $(".mycourses-gray-header").on('click' ,function(){
   $(this).toggleClass("mycourses-header-active")
 });
-
+$( document ).ready(function() {
+  $('.mycourses-cart').click(function () {
+    $(this).parents('.tab-content').find('.show-part').hide(
+            500);
+    $(this).parents('.tab-content').find('.hide-part').show(
+            500);
+});
+});
