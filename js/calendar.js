@@ -805,7 +805,7 @@
         }
         }
 
-        if (!self.config.static && !self.config.inline) (self.config.appendTo !== undefined ? self.config.appendTo : window.document.body).appendChild(self.calendarContainer);
+        if (!self.config.static && !self.config.inline) (self.config.appendTo !== undefined ? self.config.appendTo :window.document.getElementById('calenderx') ).appendChild(self.calendarContainer);
     }
 
     function createDay(className, date, dayNumber, i) {
