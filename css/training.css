@@ -246,7 +246,10 @@ margin-bottom: 4px
 .mycourses-cart{
     cursor: pointer;
 }
-.mycourses-cart:hover{
+.course-info{
+    cursor: pointer;
+}
+.course-info:hover{
     opacity: 0.5;
 }
 .course-details{
@@ -457,7 +460,7 @@ margin-bottom: 4px
 	-ms-scroll-snap-coordinate: 50% 0%, 0% 0%;
 	scroll-snap-coordinate: 50% 0%, 0% 0%;
 }
-.card>img {
+.course-info>img {
 	width: 100%;
 	border-radius: 8px;
 }
