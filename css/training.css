@@ -47,6 +47,7 @@ margin-bottom: 4px
     display: block;
     font-size: 20px;
     margin-bottom: 10px;
+    text-decoration: none
 }
 .mycourses-online .card-title{
     margin-top: 20px
@@ -195,6 +196,41 @@ margin-bottom: 4px
 .mycourses_details_page  .cart_padding p{
     margin-bottom: 0
 }
+/*mycourses_training_page*/
+.mycourses_training_page{
+    margin: 20px;
+}
+.mycourses_training_page .training-send-btn{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+.mycourses_training_page .btn{
+    background:#027ffc;
+    float: none;
+    padding: 4px 30px;
+
+}
+.mycourses_training_page ul{
+    padding-right: 0
+}
+.mycourses_training_page ul li{
+    font-size: 14px;
+    margin-bottom: 16px;
+    position: relative;
+    padding-right: 18px;
+    color: #919191
+}
+li::before {
+    content: "";
+     background:#027ffc;
+     position: absolute;
+     right: 0;
+     top:10px;
+     width: 8px;
+     height: 8px;
+     border-radius: 50%;
+    }
 /*progress-courses-item*/
 .bg-success{
     background: #62bd3c !important;
@@ -311,6 +347,7 @@ margin-bottom: 4px
 .back-courses{
     float:left;
     cursor: pointer;
+    color: #027ffc;
 }
 /*============== Start Style for upcoming and monthly events ===================*/
 /*start agenda-events*/
@@ -461,6 +498,10 @@ margin-bottom: 4px
 	scroll-snap-coordinate: 50% 0%, 0% 0%;
 }
 .course-info>img {
+	width: 100%;
+	border-radius: 8px;
+}
+.card>img {
 	width: 100%;
 	border-radius: 8px;
 }

@@ -3,13 +3,17 @@ $(".mycourses-gray-header").on('click' ,function(){
   $(this).toggleClass("mycourses-header-active")
 });
 
-
 $(".mycourses_gray_header").on('click' ,function(){
   $(this).toggleClass("mycourses_header-active")
  });
+ //mycourses-cart-details
  $(".progress-courses-item .mycourses-cart-details ").on("click",function(){
   $(this).parents(".tab-content").find(".hidden").fadeOut();
-  $(this).parents(".tab-content").find(".mycourses_details_page").fadeIn();
+  $(this).parents(".tab-content").find(".mycourses__details").fadeIn();
+ });
+ $(".hidden .go_training_page").on("click",function(){
+  $(this).parents(".tab-content").find(".hidden").fadeOut();
+  $(this).parents(".tab-content").find(".mycourses_training_page").fadeIn();
  });
  $(".mycourses_details_page .back ").on("click",function(){
   $(this).parents(".mycourses_details_page").fadeOut();
@@ -59,7 +63,14 @@ $('#back-courses').click(function () {
     });
     $('.to_icon2').on('click', function() {
 			$('#date111').datepicker('show');
-    });
+	});
+	
+	$('.datepicker-me-class').on('changeDate', function() {
+		let valdate = $('#date2 .in').val();
+		 let scliceByDat = valdate.slice(3,5)
+		console.log( scliceByDat );
+		
+		});
 
 	});
 	/* horizontal scroll for carts by owl carousel.js */
