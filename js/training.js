@@ -15,6 +15,20 @@ $(".mycourses_gray_header").on('click' ,function(){
   $(this).parents(".mycourses_details_page").fadeOut();
   $(this).parents(".tab-content").find(".hidden").fadeIn();
  });
+ $( document ).ready(function() {
+  $('.mycourses-cart').click(function () {
+    $(this).parents('.tab-content').find('.show-part').hide(
+            500);
+    $(this).parents('.tab-content').find('.hide-part').show(
+            500);
+});
+$('#back-courses').click(function () {
+  $(this).parents('.tab-content').find('.hide-part').hide(
+          500);
+  $(this).parents('.tab-content').find('.show-part').show(
+          500);
+});
+});
 
 
 
