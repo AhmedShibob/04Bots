@@ -750,10 +750,9 @@
     display: block;
     text-align: center;
     visibility: visible;
-    width: 100% !important;
-    height: 100vh !important;
-    top: 0 !important;
-    left: 0 !important;
+    height: 100vh;
+    top: 0 ;
+    left: 0 ;
 }
 .flatpickr-rContainer {
     margin: auto
@@ -784,11 +783,13 @@
 
 .flatpickr-calendar {
   background-color: #fff;
-  top: 135px!important;
-  left: 20px!important;
-  width: 90%!important;
+  width: 90% !important;
   box-shadow: none;
-  height: 302px!important
+  height: 302px;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .flatpickr-months {
