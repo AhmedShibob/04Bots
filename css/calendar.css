@@ -768,53 +768,21 @@
 
 .flatpickr-day {
 
-<<<<<<< HEAD
-  max-width: initial;
-  width: 14.28571428571429%;
-  margin: 5px auto;
-=======
     max-width: initial;
     width: 14.28571428571429%;
     margin: 5px auto;
->>>>>>> d0745ed8dda060e25854b2c87f4dd1e9010859f6
 }
 
 .dayContainer,
 .flatpickr-rContainer {
-<<<<<<< HEAD
-  min-width: inherit;
-  max-width: inherit;
-  width: 100%;
-=======
     min-width: inherit;
     max-width: inherit;
     width: 100%;
->>>>>>> d0745ed8dda060e25854b2c87f4dd1e9010859f6
 }
 
 /*======================================================*/
 
 .flatpickr-calendar {
-<<<<<<< HEAD
-background-color: #fff;
-top: 135px!important;
-left: 20px!important;
-width: 90%!important;
-box-shadow: none;
-height: 302px!important
-}
-
-.flatpickr-months {
-margin-bottom: 20px
-}
-
-.shortcut-buttons-flatpickr-wrapper {
-display: none!important
-}
-
-.flatpickr-current-month {
-color: #ddd
-=======
   background-color: #fff;
   top: 135px!important;
   left: 20px!important;
@@ -833,26 +801,10 @@ color: #ddd
 
 .flatpickr-current-month {
   color: #ddd
->>>>>>> d0745ed8dda060e25854b2c87f4dd1e9010859f6
 }
 
 .flatpickr-next-month,
 .flatpickr-prev-month {
-<<<<<<< HEAD
-opacity: .3;
-}
-
-.flatpickr-weekday {
-color: #278ef9!important
-}
-
-.flatpickr-day {
-height: 30px!important;
-width: 30px!important;
-line-height: 30px;
-border-radius: 50%!important;
-color: #8a8a8a
-=======
   opacity: .3;
 }
 
@@ -866,51 +818,10 @@ color: #8a8a8a
   line-height: 30px;
   border-radius: 50%!important;
   color: #8a8a8a
->>>>>>> d0745ed8dda060e25854b2c87f4dd1e9010859f6
 }
 
 .flatpickr-day.prevMonthDay,
 .flatpickr-day.nextMonthDay {
-<<<<<<< HEAD
-color: #ddd
-}
-
-.flatpickr-day.today {
-border-radius: 50%;
-max-width: 30px!important;
-height: 30px!important;
-line-height: 30px!important;
-background-color: #278ef9;
-border: 0;
-color: #fff;
-font-weight: 600
-}
-
-.flatpickr-day.selected {
-background-color: #fff;
-border-width: 2px;
-border-color: #f96a40;
-color: #f96a40;
-}
-
-#calendar {
-margin-top: calc( 100vh - 200px );
-left: 20px;
-position: absolute!important;
-left: 20px!important;
-display: none
-}
-
-.ma {
-display: none
-}
-
-.flatpickr-calendar .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days span {
-height: 35px!important;
-line-height: 35px!important;
-max-width: 35px!important;
-border-radius: 50%!important
-=======
   color: #ddd
 }
 
@@ -949,5 +860,4 @@ border-radius: 50%!important
   line-height: 35px!important;
   max-width: 35px!important;
   border-radius: 50%!important
->>>>>>> d0745ed8dda060e25854b2c87f4dd1e9010859f6
 }
