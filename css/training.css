@@ -1,4 +1,5 @@
-@font-face {
+
+  @font-face {
     font-family: DIN-LIGHT;
     src: url(../fonts/DINNEXTLTARABIC-LIGHT.ttf);
 }
@@ -11,7 +12,6 @@ nav .nav{
 }
 .nav .nav-link {
     color: #a1a2a2;
-    font-family:   DIN-LIGHT;
 }
 .nav .nav-link.active,.btn-link:hover{
     color:#027ffc;
@@ -25,53 +25,57 @@ nav .nav{
     display: block;
     margin: 30px auto;
 }
-/*mycourses-actual*/
-.mycourses-actual{
+/*mycourses-training*/
+.mycourses_training{
 margin-top: 20px;
 }
-/*mycourses-gray-header*/
-.mycourses-gray-header{
+/*mycourses_gray_header*/
+.mycourses_gray_header{
     background: #f1f1f1;
     font-family: DIN-MEDIUM;
     margin-bottom: 15px;
 
 }
-.mycourses-gray-header .btn{
+.mycourses_gray_header .btn{
     width: 100%;
     text-decoration: none;
-    text-align: right
+    text-align: right;
+    position: relative
 }
-.mycourses-gray-header .icon{
-    float: left;
+.mycourses_gray_header .icon{
+    position: absolute;
+    left: 9px;
+    top: 4px;
 }
-.mycourses_gary_header i{
+.mycourses_gray_header i{
     -webkit-transition: all .4s ease-in-out 0s;
     -moz-transition: all .4s ease-in-out 0s;
     -o-transition: all .4s ease-in-out 0s;
     transition: all .4s ease-in-out 0s;
 }
-.mycourses-gray-header.mycourses-header-active i{
+.mycourses_gray_header.mycourses_header-active i{
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-.mycourses-actual-item  .mycourses-cart{
-    margin: 25px;
+.mycourses_training_item  .mycourses-cart{
+    cursor: pointer;
+    margin: 15px 20px;
     overflow: hidden;
 }
-.mycourses-actual-item  .mycourses-cart img{
+.mycourses-cart.cart_padding{
+    padding:10px
+}
+.mycourses_training_item  .mycourses-cart img{
     height: 100%;
     max-height: 90px;
     width: auto
 }
-.mycourses-actual-item  .mycourses-cart-details{
-    margin-right: 20px;
+.mycourses_training_item  .mycourses-cart-details{
+    margin-right: 12px;
     padding: 5px 0;
 }
-.mycourses-actual-item  .mycourses-cart-details h6{
-    color: #027ffc;
-    font-family: DIN-MEDIUM;
-}
-.mycourses-actual-item  .mycourses-cart-details span{
+
+.mycourses_training_item  .mycourses-cart-details span{
     display: block;
     color: #a1a2a2;
     font-size: 12px
@@ -87,14 +91,98 @@ margin-top: 20px;
     color: #FFD119;
     text-decoration: none; 
 }
+/*mycourses_details_poage*/
+.mycourses_details_page .back{
+    color: #027ffc;
+    float: left;
+    left: 10px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.mycourses_details_page .mycourses-cart{
+    position: relative
+}
+.mycourses_details_page {
+    padding: 10px;
+    display: none
+}
+.mycourses_details_page .main_cart{
+    padding-bottom: 20px;
+}
+.mycourses_details_page .main_cart::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    background: #919191;
+}
+.mycourses_details_page .mycourses-cart img{
+    border-radius: 4px;
+}
+.mycourses_details_page  .mycourses-cart-details .progress{
+    width: 100% !important
+}
+.mycourses_details_page .mycourses-cart .avatar{
+    height: 100px;
+    width: 70px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.mycourses_details_page .mycourses-cart .avatar img{
+    max-height: 100%;
+
+}
+.mycourses_details_page .mycourses_details_result{
+    padding: 20px;
+}
+.mycourses_details_page .mycourses_details_precent{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.mycourses_details_page .mycourses_details_precent>div{
+    width: 100%;
+    text-align: center;
+    
+}
+.mycourses_details_page .mycourses_details_precent>div:first-of-type{
+    border-left: 1px solid #919191
+}
+.mycourses_details_page .mycourses_details_precent span{
+    color: #797979;
+    font-weight: bold
+}
+.mycourses_details_page .mycourses_details_precent h2{
+    color: #62bd3c
+}
+.mycourses_details_page .btn{
+    float: left;
+    padding: 2px 20px;
+    margin: 10px;
+    font-size: 13px;
+    font-family: DIN-MEDIUM;
+    background: #919191;
+    color: #fff
+}
+.mycourses_details_page  .cart_padding p{
+    margin-bottom: 0
+}
 /*progress-courses-item*/
+.bg-success{
+    background: #62bd3c !important;
+}
 .progress-courses-item  .mycourses-cart-details span,.progress-courses-item .starrr{
     display: inline;
     float: none
 }
 .mycourses-cart-details .progress {
     width: 80%;
-    height: 8px;
+    height: 6px;
     margin: 5px auto;
     border-radius: 22px;
 
@@ -115,6 +203,264 @@ margin-top: 20px;
 .progress-courses-item .mycourses-cart-details .starrr a{
     font-size: 7px;
 }
+
+
 .class{
     background-color: antiquewhite;
+}
+
+/*============== Start Style for upcoming and monthly events ===================*/
+/*start agenda-events*/
+.box-shadow {
+    -wbkit-box-shadow: 0 3px 10px #dddddd;
+    -webkit-box-shadow: 0 3px 10px #dddddd;
+            box-shadow: 0 3px 10px #dddddd;
+    border-radius: 8px;
+  }
+
+  .events-section {
+      margin-top: 330px;
+      width: 90%;
+      margin-right: 20px;
+  }
+  
+  .agenda-events {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .agenda-events .title-agenda-event {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 0; 
+    font-weight: bold;
+    font-family: DIN-LIGHT;
+  }
+  
+  .agenda-events .agenda-event {
+    padding: 25px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-right: 0!important
+  }
+  
+  .agenda-events .agenda-event:last-of-type {
+    border: 0;
+  }
+  
+  .agenda-events .avatar {
+    width: 60px;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  
+  .agenda-events .avatar img {
+    border-radius: 50%;
+    height: 60px;
+  }
+  
+  .agenda-events .details-event {
+    margin-top: 8px
+  }
+  
+  .agenda-events .details-event h5 {
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: #4e4e4e;
+    font-family: DIN-MEDIUM;
+  }
+  
+  .agenda-events .details-event p {
+    font-size: 10px;
+    color: #4e4e4e;
+    margin-bottom: 0;
+  }
+  
+  .agenda-events .time-event {
+    color: #4e4e4e;
+    font-size: 13px;
+  }
+  
+  .agenda-events .time-event i {
+    color: #ff5700;
+    font-size: 8px;
+  }
+  /*end agenda-events*/
+/*============== End Style for upcoming and monthly events ===================*/
+
+
+
+.in-progress {
+	direction: rtl;
+	text-align: right;
+	font-family: DIN-MEDIUM;
+}
+.in-progress-primary {
+	color: #0d7efa;
+}
+.recomended-primary {
+	color: #fba831;
+}
+.my-courses {
+	margin-right: 10px;
+}
+.my-courses-recommend {
+	margin-bottom: 20px;
+	margin-top: 50px;
+	margin-right: 10px;
+}
+.scroll-left {
+	scroll-behavior: smooth;
+	-webkit-scroll-snap-type: mandatory;
+	-ms-scroll-snap-type: mandatory;
+	scroll-snap-type: mandatory;
+	-webkit-scroll-snap-destination: 50% 0%;
+	-ms-scroll-snap-destination: 50% 0%;
+	scroll-snap-destination: 50% 0%;
+	-webkit-overflow-scrolling: touch;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: auto;
+	white-space: nowrap;
+	counter-reset: list;
+	direction: rtl;
+	text-align: right;
+}
+.owl-carousel .owl-stage {
+	display: flex;
+}
+.card {
+	-webkit-scroll-snap-coordinate: 50% 0%;
+	-ms-scroll-snap-coordinate: 50% 0%;
+	scroll-snap-coordinate: 50% 0%;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+	counter-increment: list;
+	width: 100%;
+	height: auto;
+	color: #666;
+	background: #ffff;
+	font-family: DIN-MEDIUM;
+	border-radius: 10px;
+}
+.card:first-child {
+	-webkit-scroll-snap-coordinate: 50% 0%, 100% 0%;
+	-ms-scroll-snap-coordinate: 50% 0%, 100% 0%;
+	scroll-snap-coordinate: 50% 0%, 100% 0%;
+}
+.card:last-child {
+	-webkit-scroll-snap-coordinate: 50% 0%, 0% 0%;
+	-ms-scroll-snap-coordinate: 50% 0%, 0% 0%;
+	scroll-snap-coordinate: 50% 0%, 0% 0%;
+}
+.card>img {
+	width: 100%;
+	border-radius: 8px;
+}
+.course-instructor {
+	font-size: 12px;
+	color: #6f7070;
+}
+.course-name {
+	font-size: 15px;
+	color: #0d7efa;
+}
+.cart-content {
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: -25px;
+}
+.heart-icon {
+	background-image: url(../imgs/favorite-heartred.svg) !important;
+	background-repeat: no-repeat;
+}
+.calenderhover {
+	background-image: url(../imgs/calendar_blue.svg) !important;
+	background-repeat: no-repeat;
+}
+.react span:first-of-type:hover, .react span:first-of-type:active {
+	background-image: url(../imgs/favorite-heartred.svg);
+	background-repeat: no-repeat;
+	background-origin: center;
+}
+.react span:last-of-type:hover {
+	background-image: url(../imgs/calendar_blue.svg);
+	background-repeat: no-repeat;
+	background-origin: center;
+}
+.react .heart-img {
+	background-image: url(../imgs/favorite-heart-button.svg);
+	background-repeat: no-repeat;
+	background-origin: center;
+}
+.react .calender-img {
+	background-image: url(../imgs/calendar.svg);
+	background-repeat: no-repeat;
+	background-origin: center;
+}
+.react {
+	margin-top: -10px;
+	margin-bottom: 20px;
+	display: block;
+	max-height: 30px;
+	z-index: 10;
+}
+.react>span {
+	cursor: pointer;
+	height: 35px;
+	width: 35px;
+}
+.datepicker-me-class>.form-control {
+	bottom: 32px;
+	left: 25px;
+	position: absolute;
+	visibility: hidden;
+}
+.datepicker-me-class {
+	position: absolute;
+	bottom: 40px;
+	left: 42px;
+}
+.scroll-left::-webkit-scrollbar {
+	background-color: #F5F5F5;
+	display: block;
+	height: 5px;
+}
+.scroll-left::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background: linear-gradient(left, #fff, #e4e4e4);
+	border: 1px solid #aaa;
+}
+.scroll-left::-webkit-scrollbar-thumb:hover {
+	background: #fff;
+}
+.scroll-left::-webkit-scrollbar-thumb:active {
+	background: linear-gradient(left, #22ADD4, #1E98BA);
+}
+@media (max-width:650px) {
+	.owl-carousel .owl-stage .active {
+		width: 160px !important;
+		margin-left: 10px;
+	}
+	.owl-carousel .owl-stage .owel-item--custom {
+		width: 160px !important;
+		margin-left: 10px;
+	}
+	.react>span {
+		height: 20px;
+		width: 20px;
+		position: relative;
+		z-index: 5;
+	}
+	.react {
+		margin-bottom: 15px;
+	}
+	.cart-content {
+		margin-bottom: -30px;
+	}
 }

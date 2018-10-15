@@ -7,8 +7,8 @@ var slice = [].slice;
       rating: void 0,
       max: 5,
       readOnly: false,
-      emptyClass: 'far fa-star',
-      fullClass: 'fas fa-star',
+      emptyClass: 'fa fa-star-o',
+      fullClass: 'fa fa-star',
       change: function(e, value) {}
     };
 
@@ -98,59 +98,8 @@ var slice = [].slice;
 })(window.jQuery, window);
 $('.starrr').starrr({
     rating: 4
-});
-$(".mycourses-gray-header").on('click' ,function(){
-  $(this).toggleClass("mycourses-header-active")
-});
-
-
-$(".mycourses_gray_header").on('click' ,function(){
-  $(this).toggleClass("mycourses_header-active")
- });
- $(".progress-courses-item .mycourses-cart-details ").on("click",function(){
-  $(this).parents(".tab-content").find(".hidden").fadeOut();
-  $(this).parents(".tab-content").find(".mycourses_details_page").fadeIn();
- });
- $(".mycourses_details_page .back ").on("click",function(){
-  $(this).parents(".mycourses_details_page").fadeOut();
-  $(this).parents(".tab-content").find(".hidden").fadeIn();
- });
+})
 
 
 
 
-
- $(document).ready(function() {
-	/* change icon svg background */
-	$(".heart-img").click(function() {
-		$(this).toggleClass("heart-icon");
-	});
-	$(".calender-img").click(function() {
-		$(this).toggleClass("calenderhover");
-	})
-	/* datapickr calender */
-	$(function() {
-		$('.datepicker-me-class').datepicker({
-			language: 'es',
-			weekStart: 1,
-			todayBtn: true,
-			autoclose: true,
-			todayHighlight: true,
-			startView: 2,
-			minViewMode: 2,
-			forceParse: false
-		});
-		$('.to_icon').on('click', function() {
-			$('#date2').datepicker('show');
-		});
-	});
-	/* horizontal scroll for carts by owl carousel.js */
-	$('.owl-carousel.owl-drag .owl-item').removeClass("owl-item").addClass("owel-item--custom");
-	$('.owl-carousel').owlCarousel({
-		loop: false,
-		rtl: true,
-		margin: 10,
-		autoplayHoverPause: true,
-		center: true,
-	})
-});

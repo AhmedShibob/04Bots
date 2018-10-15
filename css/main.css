@@ -2,16 +2,16 @@ body{
     direction:rtl;
     text-align: right;
     font-family:sans-serif,DIN-LIGHT;
- }
- 
- .wrapper {
+}
+
+.wrapper {
     overflow: hidden;
- }
- 
- #nav-mycourses,
- #nav-courses {
+}
+
+#nav-mycourses,
+#nav-courses {
     position: relative;
     z-index: 99999999999999999999999999999999;
     background-color: #fff;
     height: 100vh
- }
+}
