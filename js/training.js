@@ -3,13 +3,17 @@ $(".mycourses-gray-header").on('click' ,function(){
   $(this).toggleClass("mycourses-header-active")
 });
 
-
 $(".mycourses_gray_header").on('click' ,function(){
   $(this).toggleClass("mycourses_header-active")
  });
+ //mycourses-cart-details
  $(".progress-courses-item .mycourses-cart-details ").on("click",function(){
   $(this).parents(".tab-content").find(".hidden").fadeOut();
-  $(this).parents(".tab-content").find(".mycourses_details_page").fadeIn();
+  $(this).parents(".tab-content").find(".mycourses__details").fadeIn();
+ });
+ $(".hidden .go_training_page").on("click",function(){
+  $(this).parents(".tab-content").find(".hidden").fadeOut();
+  $(this).parents(".tab-content").find(".mycourses_training_page").fadeIn();
  });
  $(".mycourses_details_page .back ").on("click",function(){
   $(this).parents(".mycourses_details_page").fadeOut();
