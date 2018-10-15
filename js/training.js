@@ -56,6 +56,7 @@ $('#back-courses').click(function () {
 		});
 		$('.to_icon').on('click', function() {
 			$('#date2').datepicker('show');
+			$('#date111').datepicker('show');
 		});
 	});
 	/* horizontal scroll for carts by owl carousel.js */
@@ -66,5 +67,6 @@ $('#back-courses').click(function () {
 		margin: 10,
 		autoplayHoverPause: true,
 		center: true,
-	})
+  });
+  $('.owl-stage .owl-item').removeClass("owl-item").addClass("owel-item--custom");
 });
