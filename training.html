@@ -2,210 +2,553 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/training.css">
-  <title>!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <!-- Styles CSS -->
+    <link href="css/plugin/bootstrap-datapicker.css" rel="stylesheet" type="text/css">
+    <link href="css/plugin/oul.min.css" rel="stylesheet">
+    <link href="css/plugin/owl-them.css" rel="stylesheet">
+    <link href="css/plugin/stars.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/training.css">
+    <title>!</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <nav>
-      <div class="nav justify-content-center shadow-sm  rounded" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active " id="nav-agenda-tab" data-toggle="tab" href="#nav-agenda" role="tab"
-          aria-controls="nav-agenda" aria-selected="true">الأجنده</a>
-        <a class="nav-item nav-link" id="nav-mycourses-tab" data-toggle="tab" href="#nav-mycourses" role="tab"
-          aria-controls="nav-mycourses" aria-selected="false">دوراتى</a>
-        <a class="nav-item nav-link" id="nav-courses-tab" data-toggle="tab" href="#nav-courses" role="tab"
-          aria-controls="nav-courses" aria-selected="false">الدورات</a>
-      </div>
-    </nav>
-    <!--========== Start Search ==========-->
-    <div class="search-box">
-      <input class="form-control search-box-input" type="text" placeholder="بحث ...">
-    </div>
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="nav-agenda" role="tabpanel" aria-labelledby="nav-agenda-tab">...</div>
-      <!--========== mycourses ==========-->
-      <div class="tab-pane show-part fade" id="nav-mycourses" role="tabpanel" aria-labelledby="nav-mycourses-tab">
+
+    <div class="wrapper">
         <nav>
-          <div class="nav justify-content-center shadow-sm  rounded" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active " id="nav-mycourses-actual-tab" data-toggle="tab" href="#nav-mycourses-actual"
-              role="tab" aria-controls="nav-mycourses-actual" aria-selected="true">الدورات الفعليه</a>
-            <a class="nav-item nav-link" id="nav-mycourses-online-tab" data-toggle="tab" href="#nav-mycourses-online"
-              role="tab" aria-controls="nav-mycourses-online" aria-selected="false">دورات online</a>
-          </div>
+            <!--Start main nav-->
+            <div class="nav justify-content-center shadow-sm  rounded" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active " id="nav-agenda-tab" data-toggle="tab" href="#nav-agenda" role="tab"
+                    aria-controls="nav-agenda" aria-selected="true">الأجنده</a>
+                <a class="nav-item nav-link" id="nav-mycourses-tab" data-toggle="tab" href="#nav-mycourses" role="tab"
+                    aria-controls="nav-mycourses" aria-selected="false">دوراتى</a>
+                <a class="nav-item nav-link" id="nav-courses-tab" data-toggle="tab" href="#nav-courses" role="tab"
+                    aria-controls="nav-courses" aria-selected="false">الدورات</a>
+            </div>
+            <!--Start main nav-->
         </nav>
-        <div class="tab-content" id="nav-tabContent2">
-          <div class="tab-pane fade show active" id="nav-mycourses-actual" role="tabpanel" aria-labelledby="nav-mycourses-actual-tab">
-            <div class="mycourses-actual">
-              <div class="mycourses-actual-item">
-                <div class="mycourses-gray-header">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#mycourses-actual-item1">
-                      الدورات
-                      <span class="icon"><i class="fas fa-angle-down"></i></span>
-                    </button>
-                  </h5>
-                </div>
-                <div id="mycourses-actual-item1" class="collapse">
-                  <div class="mycourses-cart shadow-sm  rounded media mr-3">
-                    <div class="align-self-center avatar">
-                      <img src="images/test.png" alt="name.....">
-                    </div>
-                    <div class="mycourses-cart-details media-body">
-                      <h6>كورس المهارات القياديه</h6>
-                      <span>By Ayman</span>
-                      <div class='starrr'></div>
-                    </div>
-                  </div>
-                  <div class="mycourses-cart shadow-sm  rounded media mr-3">
-                    <div class="align-self-center avatar">
-                      <img src="images/test.png" alt="name.....">
-                    </div>
-                    <div class="mycourses-cart-details media-body">
-                      <h6>كورس المهارات القياديه</h6>
-                      <span>By Ayman</span>
-                      <div class='starrr'></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mycourses-actual-item progress-courses-item">
-                <div class="mycourses-gray-header">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#mycourses-actual-item2">
-                      الدورات المكتمله
-                      <span class="icon"><i class="fas fa-angle-down"></i></span>
-                    </button>
-                  </h5>
-                </div>
-                <div id="mycourses-actual-item2" class="collapse">
-                  <div class="mycourses-cart shadow-sm  rounded media mr-3">
-                    <div class="align-self-center avatar">
-                      <img src="images/test.png" alt="name.....">
-                    </div>
-                    <div class="mycourses-cart-details media-body">
-                      <h6>كورس المهارات القياديه</h6>
-                      <span>By Ayman</span>
-                      <div class='starrr'></div>
-                      <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <p>انت تفعل جيدا , أستمر</p>
-                    </div>
-                  </div>
-                  <div class="mycourses-cart shadow-sm  rounded media mr-3">
-                    <div class="align-self-center avatar">
-                      <img src="images/test.png" alt="name.....">
-                    </div>
-                    <div class="mycourses-cart-details media-body">
-                      <h6>كورس المهارات القياديه</h6>
-                      <span>By Ayman</span>
-                      <div class='starrr'></div>
-                      <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <p>انت تفعل جيدا , أستمر</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade fade" id="nav-mycourses-online" role="tabpanel" aria-labelledby="nav-mycourses-online-tab">mycourses-online</div>
+
+
+        <!--========== Start Search ==========-->
+        <div class="search-box">
+            <input class="form-control search-box-input" type="text" placeholder="بحث ...">
         </div>
-
-      </div>
-      <div class="hide-part">
-        <div class="course-details shadow-sm container">
-          <h6 class="course-details-name">كورس المهارات القياديه</h6>
-          <span class="course-details-instructor">By Ayman Eldeeb</span> <br>
-          <div class="starrr"></div> <br>
-          <p class="course-details-content">استعملت لبلجيكا، الأوروبيّون أم تلك, بقصف بشرية بريطانيا-فرنسا هو جُل. عدم
-            الشتاء ديسمبر ألمانيا قد. حول في وزارة وبالتحديد،. وجهان الثانية تعد قد, للسيطرة وتتحمّل الدّفاع هذا قد.
-            يونيو ارتكبها والفلبين من عدم. تعد مع فشكّل مهمّات, حيث ممثّلة الأهداف بـ. لإعلان الإقتصادية قد الى, ضرب
-            بحشد واستمر هو, أدوات إستيلاء ومحاولة كلا بل.</p>
-          <div class="progress course-details-progress">
-            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
-              aria-valuemax="100"></div>
-          </div>
-          <div class="lecture d-flex shadow-sm justify-content-between">
-            <img src="images/play-button.svg" alt="play-button">
-            <div class="lecture-details flex">
-              <h6 class="lecture-name">المحاضرة الاولى كورس المهارات القياديه</h6>
-              <div class="progress lecture-details-progress">
-                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="lecture-time">
-              <span class="time">10:00 min</span>
-            </div>
-          </div>
-          <div class="lecture d-flex shadow-sm justify-content-between">
-            <img src="images/play-button.svg" alt="play-button">
-            <div class="lecture-details flex">
-              <h6 class="lecture-name">المحاضرة الاولى كورس المهارات القياديه</h6>
-              <div class="progress lecture-details-progress">
-                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="lecture-time">
-              <span class="time">10:00 min</span>
-            </div>
-          </div>
-          <div class="lecture d-flex shadow-sm justify-content-between">
-            <img src="images/play-button.svg" alt="play-button">
-            <div class="lecture-details flex">
-              <h6 class="lecture-name">المحاضرة الاولى كورس المهارات القياديه</h6>
-              <div class="progress lecture-details-progress">
-                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="lecture-time">
-              <span class="time">10:00 min</span>
-            </div>
-          </div>
-          <div class="lecture d-flex shadow-sm justify-content-between">
-            <img src="images/play-button.svg" alt="play-button">
-            <div class="lecture-details flex">
-              <h6 class="lecture-name">المحاضرة الاولى كورس المهارات القياديه</h6>
-              <div class="progress lecture-details-progress">
-                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="lecture-time">
-              <span class="time">10:00 min</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="tab-pane fade" id="nav-courses" role="tabpanel" aria-labelledby="nav-courses-tab">...</div>
+        <!--========== End Search ==========-->
     </div>
-  </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="js/training.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <div class="tab-content" id="nav-tabContent">
+
+        <!--========== Start Calendar ==========-->
+        <div class="tab-pane fade show active" id="nav-agenda" role="tabpanel" aria-labelledby="nav-agenda-tab">
+
+            <div class="calendar">
+                <div class="row">
+                    <!--Start row-->
+                    <div class="col-12">
+                        <!--Start col-->
+                        <button class="ma">click</button>
+                        <input id="calendar">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--========== Start mycourses ==========-->
+        <div class="tab-pane fade" id="nav-mycourses" role="tabpanel" aria-labelledby="nav-mycourses-tab">
+            <div class="show-part">
+                <nav>
+                    <!--Start branch nav-->
+                    <div class="nav justify-content-center shadow-sm  rounded" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active " id="nav-mycourses-actual-tab" data-toggle="tab" href="#nav-mycourses-actual"
+                            role="tab" aria-controls="nav-mycourses-actual" aria-selected="true">الدورات الفعليه</a>
+                        <a class="nav-item nav-link" id="nav-mycourses-online-tab" data-toggle="tab" href="#nav-mycourses-online"
+                            role="tab" aria-controls="nav-mycourses-online" aria-selected="false">دورات online</a>
+                    </div>
+                </nav>
+                <!--End branch nav-->
+                <div class="tab-content" id="nav-tabContent2">
+                    <!--Start tab-content-->
+                    <div class="tab-pane fade show active" id="nav-mycourses-actual" role="tabpanel" aria-labelledby="nav-mycourses-actual-tab">
+                        <div class="mycourses_training">
+                            <!--mycourses-item-->
+                            <div class="mycourses_training_item">
+                                <!--mycourses_cart_details show when click mycourses-cart-->
+                                <div class="mycourses_details_page">
+                                    <span class="back"><i class="fas fa-arrow-left"></i></span>
+                                    <div class="mycourses-cart  media main_cart">
+                                        <div class="align-self-center avatar">
+                                            <img src="images/test.png" alt="name.....">
+                                        </div>
+                                        <div class="mycourses-cart-details media-body">
+                                            <h5>كورس المهارات القياديه</h5>
+                                            <span>By Ayman</span>
+                                            <div class='starrr'></div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mycourses-cart mycourses_details_result shadow-sm  rounded">
+                                        <h6>أختبار قبل الكورس</h6>
+                                        <div class="mycourses_details_precent">
+                                            <div>
+                                                <span>نسبه نجاح</span>
+                                                <h2>95%</h2>
+                                            </div>
+                                            <div>
+                                                <span>التقدير</span>
+                                                <h2>ممتاز</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mycourses-cart cart_padding shadow-sm  rounded">
+                                        <h6 class="color_gray">أختبار قبل الكورس</h6>
+                                        <p>نال حقيقه مثبته منذ زمن طويل وهى أن المحتوى المقروء لصفحه ما سيلهى القارئ عن
+                                            التركيز على الشكل الخارجى للنص
+                                        </p>
+                                        <a href="" class="btn small-btn">ابدأ الأن</a>
+                                    </div>
+                                    <div class="mycourses-cart  cart_padding  shadow-sm  rounded">
+                                        <h6 class="color_gray"></h6>أختبار قبل الكورس</h6>
+                                        <p>نال حقيقه مثبته منذ زمن طويل وهى أن المحتوى المقروء لصفحه ما سيلهى القارئ عن
+                                            التركيز على الشكل الخارجى للنص
+                                        </p>
+                                        <a href="" class="btn small-btn">ابدأ الأن</a>
+                                    </div>
+                                </div>
+                                <div class="hidden">
+                                    <div class="mycourses_gray_header">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse" data-target="#mycourses_training_item1">
+                                                الدورات
+                                                <span class="icon"><i class="fas fa-angle-down"></i></span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="mycourses_training_item1" class="collapse">
+                                        <div class="mycourses-cart shadow-sm  rounded media mr-3">
+                                            <div class="align-self-center avatar">
+                                                <img src="images/test.png" alt="name.....">
+                                            </div>
+                                            <div class="mycourses-cart-details media-body">
+                                                <h6>كورس المهارات القياديه</h6>
+                                                <span>By Ayman</span>
+                                                <div class='starrr'></div>
+                                            </div>
+                                        </div>
+                                        <div class="mycourses-cart shadow-sm  rounded media mr-3">
+                                            <div class="align-self-center avatar">
+                                                <img src="images/test.png" alt="name.....">
+                                            </div>
+                                            <div class="mycourses-cart-details media-body">
+                                                <h6>كورس المهارات القياديه</h6>
+                                                <span>By Ayman</span>
+                                                <div class='starrr'></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mycourses_training_item progress-courses-item">
+                                        <div class="mycourses_gray_header">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse" data-target="#mycourses_training_item2">
+                                                    الدورات المكتمله
+                                                    <span class="icon"><i class="fas fa-angle-down"></i></span>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="mycourses_training_item2" class="collapse">
+                                            <div class="mycourses-cart shadow-sm  rounded media mr-3">
+                                                <div class="align-self-center avatar">
+                                                    <img src="images/test.png" alt="name.....">
+                                                </div>
+                                                <div class="mycourses-cart-details media-body">
+                                                    <h6>كورس المهارات القياديه</h6>
+                                                    <span>By Ayman</span>
+                                                    <div class='starrr'></div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <p>انت تفعل جيدا , أستمر</p>
+                                                </div>
+                                            </div>
+                                            <div class="mycourses-cart shadow-sm  rounded media mr-3">
+                                                <div class="align-self-center avatar">
+                                                    <img src="images/test.png" alt="name.....">
+                                                </div>
+                                                <div class="mycourses-cart-details media-body">
+                                                    <h6>كورس المهارات القياديه</h6>
+                                                    <span>By Ayman</span>
+                                                    <div class='starrr'></div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <p>انت تفعل جيدا , أستمر</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mycourses_training_item">
+                                        <div class="mycourses_gray_header">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse" data-target="#mycourses_training_item3">
+                                                    المسار التدريبى
+                                                    <span class="icon"><i class="fas fa-angle-down"></i></span>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="mycourses_training_item3" class="collapse">
+                                            <div class="mycourses-cart shadow-sm  rounded media mr-3">
+                                                <div class="align-self-center avatar">
+                                                    <img src="images/test.png" alt="name.....">
+                                                </div>
+                                                <div class="mycourses-cart-details media-body">
+                                                    <h6>كورس المهارات القياديه</h6>
+                                                    <span>By Ayman</span>
+                                                    <div class='starrr'></div>
+                                                </div>
+                                            </div>
+                                            <div class="mycourses-cart shadow-sm  rounded media mr-3">
+                                                <div class="align-self-center avatar">
+                                                    <img src="images/test.png" alt="name.....">
+                                                </div>
+                                                <div class="mycourses-cart-details media-body">
+                                                    <h6>كورس المهارات القياديه</h6>
+                                                    <span>By Ayman</span>
+                                                    <div class='starrr'></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade fade" id="nav-mycourses-online" role="tabpanel" aria-labelledby="nav-mycourses-online-tab">
+                        mycourses-online
+                    </div>
+                    <!--End tab-content-->
+                </div>
+
+
+
+
+            </div>
+            <div class="hide-part">
+                <div class="course-details shadow-sm container">
+                    <h6 class="course-details-name">كورس المهارات القياديه</h6>
+                    <span class="back back-courses" id="back-courses" title="back to courses"><i class="fas fa-arrow-right"></i></span>
+                    <span class="course-details-instructor">By Ayman Eldeeb</span> <br>
+                    <div class="starrr"></div> <br>
+                    <p class="course-details-content">استعملت لبلجيكا، الأوروبيّون أم تلك, بقصف بشرية بريطانيا-فرنسا هو
+                        جُل. عدم
+                        الشتاء ديسمبر ألمانيا قد. حول في وزارة وبالتحديد،. وجهان الثانية تعد قد, للسيطرة وتتحمّل
+                        الدّفاع هذا قد.
+                        يونيو ارتكبها والفلبين من عدم. تعد مع فشكّل مهمّات, حيث ممثّلة الأهداف بـ. لإعلان الإقتصادية قد
+                        الى, ضرب
+                        بحشد واستمر هو, أدوات إستيلاء ومحاولة كلا بل.</p>
+                    <div class="progress course-details-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <div class="lecture d-flex shadow-sm justify-content-between">
+                        <img src="images/play-button.svg" alt="play-button">
+                        <div class="lecture-details flex">
+                            <h6 class="lecture-name">المحاضرة الاولى كورس المهارات القياديه</h6>
+                            <div class="progress lecture-details-progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="lecture-time">
+                            <span class="time">10:00 min</span>
+                        </div>
+                    </div>
+                    <div class="lecture d-flex shadow-sm justify-content-between">
+                        <img src="images/play-button.svg" alt="play-button">
+                        <div class="lecture-details flex">
+                            <h6 class="lecture-name">المحاضرة الاولى كورس المهارات القياديه</h6>
+                            <div class="progress lecture-details-progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="lecture-time">
+                            <span class="time">10:00 min</span>
+                        </div>
+                    </div>
+                    <div class="lecture d-flex shadow-sm justify-content-between">
+                        <img src="images/play-button.svg" alt="play-button">
+                        <div class="lecture-details flex">
+                            <h6 class="lecture-name">المحاضرة الاولى كورس المهارات القياديه</h6>
+                            <div class="progress lecture-details-progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="lecture-time">
+                            <span class="time">10:00 min</span>
+                        </div>
+                    </div>
+                    <div class="lecture d-flex shadow-sm justify-content-between">
+                        <img src="images/play-button.svg" alt="play-button">
+                        <div class="lecture-details flex">
+                            <h6 class="lecture-name">المحاضرة الاولى كورس المهارات القياديه</h6>
+                            <div class="progress lecture-details-progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="lecture-time">
+                            <span class="time">10:00 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-courses-recommend">
+                    <div class="in-progress">
+                        <h4 class="recomended-primary card-title">الموصى بها</h4>
+                    </div>
+                    <div class="scroll-left owl-carousel" id="scroll-left">
+                        <div class="card shadow-sm">
+                            <img alt="course" src="https://images.pexels.com/photos/1282317/pexels-photo-1282317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            <div class="cart-content">
+                                <h5 class="course-name" id="course-name">كورس المهارات القيادية</h5>
+                                <p class="course-instructor">By Ayman Eldeeeb</p>
+                                <div class='starrr'></div><br>
+                                <br>
+                            </div>
+                            <div class="react d-flex justify-content-around">
+                                <span class="heart-img"></span> <span class="to_icon calender-img"></span>
+                            </div>
+                            <div class='input-group date datepicker-me-class' id='date2'>
+                                <input class="form-control in" type='text'> <span class="input-group-addon"></span>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img alt="course" src="https://images.pexels.com/photos/1282317/pexels-photo-1282317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            <div class="cart-content">
+                                <h5 class="course-name" id="course-name">كورس المهارات القيادية</h5>
+                                <p class="course-instructor">By Ayman Eldeeeb</p>
+                                <div class='starrr'></div><br>
+                                <br>
+                            </div>
+                            <div class="react d-flex justify-content-around">
+                                <span class="heart-img"></span> <span class="to_icon calender-img"></span>
+                            </div>
+                            <div class='input-group date datepicker-me-class' id='date2'>
+                                <input class="form-control in" type='text'> <span class="input-group-addon"></span>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img alt="course" src="https://images.pexels.com/photos/1282317/pexels-photo-1282317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            <div class="cart-content">
+                                <h5 class="course-name" id="course-name">كورس المهارات القيادية</h5>
+                                <p class="course-instructor">By Ayman Eldeeeb</p>
+                                <div class='starrr'></div><br>
+                                <br>
+                            </div>
+                            <div class="react d-flex justify-content-around">
+                                <span class="heart-img"></span> <span class="to_icon calender-img"></span>
+                            </div>
+                            <div class='input-group date datepicker-me-class' id='date2'>
+                                <input class="form-control in" type='text'> <span class="input-group-addon"></span>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img alt="course" src="https://images.pexels.com/photos/1282317/pexels-photo-1282317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            <div class="cart-content">
+                                <h5 class="course-name" id="course-name">كورس المهارات القيادية</h5>
+                                <p class="course-instructor">By Ayman Eldeeeb</p>
+                                <div class='starrr'></div><br>
+                                <br>
+                            </div>
+                            <div class="react d-flex justify-content-around">
+                                <span class="heart-img"></span> <span class="to_icon calender-img"></span>
+                            </div>
+                            <div class='input-group date datepicker-me-class' id='date2'>
+                                <input class="form-control in" type='text'> <span class="input-group-addon"></span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+        <!--========== Start all courses ==========-->
+        <div class="tab-pane fade" id="nav-courses" role="tabpanel" aria-labelledby="nav-courses-tab">
+            <div class="my-courses">
+                <div class="in-progress">
+                    <h4 class="in-progress-primary card-title">الدورات الجديدة</h4>
+                </div>
+                <div class="scroll-left owl-carousel" id="scroll-left">
+                    <div class="card shadow-sm">
+                        <img alt="course" src="https://images.pexels.com/photos/1282317/pexels-photo-1282317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                        <div class="cart-content">
+                            <h5 class="course-name" id="course-name">كورس المهارات القيادية</h5>
+                            <p class="course-instructor">By Ayman Eldeeeb</p>
+                            <div class='starrr'></div><br>
+                            <br>
+                        </div>
+                        <div class="react d-flex justify-content-around">
+                            <span class="heart-img"></span> <span class="to_icon calender-img"></span>
+                        </div>
+                        <div class='input-group date datepicker-me-class' id='date2'>
+                            <input class="form-control in" type='text'> <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm">
+                        <img alt="course" src="https://images.pexels.com/photos/1282317/pexels-photo-1282317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                        <div class="cart-content">
+                            <h5 class="course-name" id="course-name">كورس المهارات القيادية</h5>
+                            <p class="course-instructor">By Ayman Eldeeeb</p>
+                            <div class='starrr'></div><br>
+                            <br>
+                        </div>
+                        <div class="react d-flex justify-content-around">
+                            <span class="heart-img"></span> <span class="to_icon calender-img"></span>
+                        </div>
+                        <div class='input-group date datepicker-me-class' id='date2'>
+                            <input class="form-control in" type='text'> <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm">
+                        <img alt="course" src="https://images.pexels.com/photos/1282317/pexels-photo-1282317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                        <div class="cart-content">
+                            <h5 class="course-name" id="course-name">كورس المهارات القيادية</h5>
+                            <p class="course-instructor">By Ayman Eldeeeb</p>
+                            <div class='starrr'></div><br>
+                            <br>
+                        </div>
+                        <div class="react d-flex justify-content-around">
+                            <span class="heart-img"></span> <span class="to_icon calender-img"></span>
+                        </div>
+                        <div class='input-group date datepicker-me-class' id='date2'>
+                            <input class="form-control in" type='text'> <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm">
+                        <img alt="course" src="https://images.pexels.com/photos/1282317/pexels-photo-1282317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                        <div class="cart-content">
+                            <h5 class="course-name" id="course-name">كورس المهارات القيادية</h5>
+                            <p class="course-instructor">By Ayman Eldeeeb</p>
+                            <div class='starrr'></div><br>
+                            <br>
+                        </div>
+                        <div class="react d-flex justify-content-around">
+                            <span class="heart-img"></span> <span class="to_icon calender-img"></span>
+                        </div>
+                        <div class='input-group date datepicker-me-class' id='date2'>
+                            <input class="form-control in" type='text'> <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-courses-recommend">
+                <div class="in-progress">
+                    <h4 class="recomended-primary card-title">الموصى بها</h4>
+                </div>
+                <div class="scroll-left owl-carousel" id="scroll-left">
+                    <div class="card shadow-sm">
+                        <img alt="course" src="https://images.pexels.com/photos/1282317/pexels-photo-1282317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                        <div class="cart-content">
+                            <h5 class="course-name" id="course-name">كورس المهارات القيادية</h5>
+                            <p class="course-instructor">By Ayman Eldeeeb</p>
+                            <div class='starrr'></div><br>
+                            <br>
+                        </div>
+                        <div class="react d-flex justify-content-around">
+                            <span class="heart-img"></span> <span class="to_icon calender-img"></span>
+                        </div>
+                        <div class='input-group date datepicker-me-class' id='date2'>
+                            <input class="form-control in" type='text'> <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm">
+                        <img alt="course" src="https://images.pexels.com/photos/1282317/pexels-photo-1282317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                        <div class="cart-content">
+                            <h5 class="course-name" id="course-name">كورس المهارات القيادية</h5>
+                            <p class="course-instructor">By Ayman Eldeeeb</p>
+                            <div class='starrr'></div><br>
+                            <br>
+                        </div>
+                        <div class="react d-flex justify-content-around">
+                            <span class="heart-img"></span> <span class="to_icon calender-img"></span>
+                        </div>
+                        <div class='input-group date datepicker-me-class' id='date2'>
+                            <input class="form-control in" type='text'> <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm">
+                        <img alt="course" src="https://images.pexels.com/photos/1282317/pexels-photo-1282317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                        <div class="cart-content">
+                            <h5 class="course-name" id="course-name">كورس المهارات القيادية</h5>
+                            <p class="course-instructor">By Ayman Eldeeeb</p>
+                            <div class='starrr'></div><br>
+                            <br>
+                        </div>
+                        <div class="react d-flex justify-content-around">
+                            <span class="heart-img"></span> <span class="to_icon calender-img"></span>
+                        </div>
+                        <div class='input-group date datepicker-me-class' id='date2'>
+                            <input class="form-control in" type='text'> <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm">
+                        <img alt="course" src="https://images.pexels.com/photos/1282317/pexels-photo-1282317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                        <div class="cart-content">
+                            <h5 class="course-name" id="course-name">كورس المهارات القيادية</h5>
+                            <p class="course-instructor">By Ayman Eldeeeb</p>
+                            <div class='starrr'></div><br>
+                            <br>
+                        </div>
+                        <div class="react d-flex justify-content-around">
+                            <span class="heart-img"></span> <span class="to_icon calender-img"></span>
+                        </div>
+                        <div class='input-group date datepicker-me-class' id='date2'>
+                            <input class="form-control in" type='text'> <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--========== End all courses ==========-->
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/plugin/bootstrap-datapicker.js"></script>
+    <script src="js/plugin/owl-min.js"></script>
+    <script src="js/plugin/stars.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/training.js"></script>
+    <script>
+        $('.starrr').starrr({
+            rating: 2
+        });
+        $(".mycourses-actual-header").on('click', function () {
+            $(this).toggleClass("active")
+        });
+    </script>
 </body>
 
 </html>
