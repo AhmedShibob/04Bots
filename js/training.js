@@ -1,22 +1,19 @@
 
-$(".mycourses-gray-header").on('click' ,function(){
-  $(this).toggleClass("mycourses-header-active")
-});
 
-$(".mycourses_gray_header").on('click' ,function(){
-  $(this).toggleClass("mycourses_header-active")
+$(".mycourses-gray-header").on('click' ,function(){
+  $(this).toggleClass("mycourses-header_active")
  });
  //mycourses-cart-details
- $(".progress-courses-item .mycourses-cart-details ").on("click",function(){
+ $(".mycourses-out-item .progress-card-vertical").on("click",function(){
   $(this).parents(".tab-content").find(".hidden").fadeOut();
-  $(this).parents(".tab-content").find(".mycourses__details").fadeIn();
+  $(this).parents(".tab-content").find(".mycourses-complete-page").fadeIn();
  });
- $(".hidden .go_training_page").on("click",function(){
+ $(".hidden .go-out-details-page").on("click",function(){
   $(this).parents(".tab-content").find(".hidden").fadeOut();
-  $(this).parents(".tab-content").find(".mycourses_training_page").fadeIn();
+  $(this).parents(".tab-content").find(".mycourses-out-details-page").fadeIn();
  });
- $(".mycourses_details_page .back ").on("click",function(){
-  $(this).parents(".mycourses_details_page").fadeOut();
+ $(".mycourses-details-page .back ").on("click",function(){
+  $(this).parents(".mycourses-details-page").fadeOut();
   $(this).parents(".tab-content").find(".hidden").fadeIn();
  });
  $( document ).ready(function() {

@@ -16,9 +16,72 @@ body{
     height: 100vh
 }
 h1,h2,h3,h4,h5,h6{
- color: #027ffc ;
+ color: #0d7df9;
  font-family: DIN-MEDIUM;
 }
 .color_gray{
     color: #6f7070
 }
+/*card-vertical*/
+.card-vertical{
+    cursor: pointer;
+    margin: 15px 20px;
+    overflow: hidden;
+}
+.card-vertical.card-padding{
+    padding:10px
+}
+.card-vertical .card-vertical-img{
+    height: 100%;
+    max-height: 90px;
+    width: auto
+}
+.card-vertical  .card-vertical-details{
+    margin-right: 12px;
+    padding: 5px 0;
+}
+.card-vertical  .card-vertical-details .card-vertical-name{
+    display: block;
+    color: #a1a2a2;
+    font-size: .9rem;
+    margin-bottom: 10px;
+
+}
+/*progress-card-vertical */
+.progress-card-vertical .card-vertical-title{
+    margin-bottom: 2px;
+    font-size: .8rem
+    
+}
+.progress-card-vertical .card-vertical-details .card-vertical-name{
+    font-size: .8rem;
+    display: inline;
+}
+.progress-card-vertical  .starrr{
+    display: inline;
+    float: none;
+}
+.progress-card-vertical  .starrr a{
+    font-size: .5rem
+}
+.progress-card-vertical .card-vertical-p{
+    text-align: center;
+    font-size: .9rem;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
