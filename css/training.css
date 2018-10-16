@@ -656,6 +656,7 @@ li::before {
     top: -3px;
     right: 4px;
     width: 100%; */
+    background-color: #f73c39
 }
 
 .card_course_live .content .live_course .content_course_live .btns form .live-course_notice {
