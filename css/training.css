@@ -131,6 +131,12 @@ margin-bottom: 4px
     padding: 10px;
     display: none
 }
+.mycourses_details_page .main_cart .starrr{
+    margin-bottom: 10px;
+}
+.mycourses_details_page .main_cart .starrr a{
+    font-size: 13px;
+}
 .mycourses_details_page .main_cart{
     padding-bottom: 20px;
 }
@@ -194,7 +200,8 @@ margin-bottom: 4px
     color: #fff
 }
 .mycourses_details_page  .cart_padding p{
-    margin-bottom: 0
+    margin-bottom: 0;
+    font-size: 13px;
 }
 /*mycourses_training_page*/
 .mycourses_training_page{
