@@ -334,7 +334,7 @@ li::before {
 .lecture-details{
     display: inline;
     margin-right:5px;
-    width: 66%;
+    width: 66% ;
 }
 .lecture-name{
     display: inline;
@@ -385,7 +385,6 @@ li::before {
     margin-bottom: 0; 
     font-weight: bold;
     font-family: DIN-LIGHT;
-  }}
 }
 
   
@@ -401,6 +400,89 @@ li::before {
   .agenda-events .agenda-event:last-of-type {
     border: 0;
   }
+  
+  .agenda-events .avatar {
+    width: 60px;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  
+  .agenda-events .avatar img {
+    border-radius: 50%;
+    height: 60px;
+  }
+  
+  .agenda-events .details-event {
+    margin-top: 8px
+  }
+  
+  .agenda-events .details-event h5 {
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: #4e4e4e;
+    font-family: DIN-MEDIUM;
+  }
+  
+  .agenda-events .details-event p {
+    font-size: 10px;
+    color: #4e4e4e;
+    margin-bottom: 0;
+  }
+  
+  .agenda-events .time-event {
+    color: #4e4e4e;
+    font-size: 13px;
+  }
+  
+  .agenda-events .time-event i {
+    color: #ff5700;
+    font-size: 8px;
+  } 
+  /*end agenda-events*/
+/*============== End Style for upcoming and monthly events ===================*/
+
+
+/*============== Start Style for upcoming and monthly events ===================*/
+/*start agenda-events*/
+.box-shadow {
+    -wbkit-box-shadow: 0 3px 10px #dddddd;
+    -webkit-box-shadow: 0 3px 10px #dddddd;
+    box-shadow: 0 3px 10px #dddddd;
+    border-radius: 8px;
+}
+
+.events-section {
+    width: 90%;
+    margin: auto
+}
+  
+.events-section .agenda-events {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.agenda-events .agenda-event {
+    padding: 20px;
+    margin-bottom: 20px;
+    padding: 25px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-right: 0!important
+}
+
+.agenda-events .agenda-event:last-of-type {
+    border: 0;
+}
+  
+.agenda-events .agenda-events .title-agenda-event {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 0; 
+    font-weight: bold;
+    font-family: DIN-LIGHT;
+}
   
   .agenda-events .avatar {
     width: 60px;
@@ -573,16 +655,14 @@ li::before {
 }
 
 .card_course_live .content .live_course .content_course_live .btns form {
-    position: relative;
-    top: -3px;
-    right: 4px;
-    width: 100%; 
-    background-color: #f73c39
+    width: 100%;
+    transition: all .2s ease-in-out;
+    display: none;
 }
 
 .card_course_live .content .live_course .content_course_live .btns form .live-course_notice {
-     border: 1px solid #f73c39;
-    border-radius: 0 4px 4px 0; 
+    border: 1px solid #f73c39;
+    border-radius: 0 4px 4px 0;
 }
 
 .card_course_live .content .live_course .content_course_live .btns form .live-course_action {
@@ -590,7 +670,8 @@ li::before {
     border: 0;
     outline: none;
     color: #fff;
-    border-radius: 4px 0 0 4px 
+    border-radius: 4px 0 0 4px;
+    cursor: pointer
 }
 
 /*Class using in jQuery to change status of its buttons when be pressed*/

@@ -107,6 +107,8 @@ $(document).ready(function() {
 
 	//working on action of leaving button
 	$('.course-content-live_leave').click(function() {
-
+		$(this).slideUp(500);
+		$(this).siblings('button').slideUp(500);
+		$('.content_course_live .btns .noticing_form').slideDown(400);
 	});
 });
