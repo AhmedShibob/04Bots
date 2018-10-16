@@ -653,7 +653,7 @@ li::before {
 .employees-tracker-page .nav .nav-link.active .employees-tracker-tab{
     opacity: 1;
 }
-**/
+****/
 @media (max-width:650px) {
 	.owl-carousel .owl-stage .active {
 		width: 160px !important;
@@ -676,5 +676,6 @@ li::before {
 		margin-bottom: -30px;
 	}
 }
+
 
 

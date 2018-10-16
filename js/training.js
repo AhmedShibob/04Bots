@@ -34,10 +34,6 @@ $('#back-courses').click(function () {
 });
 });
 
-
-
-
-
  $(document).ready(function() {
 	/* change icon svg background */
 	$(".heart-img").click(function() {
@@ -83,4 +79,34 @@ $('#back-courses').click(function () {
 		center: true,
   });
   $('.owl-stage .owl-item').removeClass("owl-item").addClass("owel-item--custom");
+});
+
+// function related to live course page---
+function liveCourse() {
+	$('.btn-link').click(function() {
+		if( $(this).hasClass('collapsed') ) {
+			$('.btn-link i').css('transform', 'rotate(0deg)');
+			$(this).children('span').html('اخفاء');
+		} else {
+			$('.btn-link i').css('transform', 'rotate(180deg)');
+			$(this).children('span').html('ظهور');
+		}
+	});
+} liveCourse();
+
+$(document).ready(function() {
+	//working on action of attendace button
+	$('.course-content-live_attend').click(function() {
+		$(this).html('تم الحضور');
+		$(this).attr('disabled', 'disabled');
+		if($(this).attr('disabled')) {
+			$(this).addClass('disabled');
+			$('.course-content-live_leave').addClass('red');
+		}
+	});
+
+	//working on action of leaving button
+	$('.course-content-live_leave').click(function() {
+		
+	});
 });
