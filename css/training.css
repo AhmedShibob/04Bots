@@ -70,7 +70,7 @@ margin-bottom: 4px
     left: 9px;
     top: 4px;
 }
-.mycourses_gray_header i{
+.mycourses_gray_header i,.employees-tracker-page .employees-tracker-tab{
     -webkit-transition: all .4s ease-in-out 0s;
     -moz-transition: all .4s ease-in-out 0s;
     -o-transition: all .4s ease-in-out 0s;
@@ -80,7 +80,7 @@ margin-bottom: 4px
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-.mycourses_training_item  .mycourses-cart{
+.mycourses_training_item  .mycourses-cart,.employees-tracker-page .mycourses-cart{
     cursor: pointer;
     margin: 15px 20px;
     overflow: hidden;
@@ -241,6 +241,9 @@ li::before {
 /*progress-courses-item*/
 .bg-success{
     background: #62bd3c !important;
+}
+.in-progress-main{
+    color: #027ffc;
 }
 .in-progress-succes{
     color: #62bd3c
@@ -594,6 +597,63 @@ li::before {
 .scroll-left::-webkit-scrollbar-thumb:active {
 	background: linear-gradient(left, #22ADD4, #1E98BA);
 }
+
+/********************************/
+/*       employees-tracker-page  */
+/******************************
+.employees-tracker-page .employees-tracker-header{
+    margin-bottom: 20px
+}
+.employees-tracker-page .employees-tracker-header .employees-tracker-avatar img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.employees-tracker-page .employees-tracke-header-details{
+    margin-right: 10px;
+    align-self: center;
+
+}
+.employees-tracker-page .employees-tracke-header-details h6{
+    margin-bottom: 0
+}
+.employees-tracker-page .employees-tracke-header-details span{
+    font-size: 12px;
+}
+.employees-tracker-page .employees-tracker-header-icon{
+    background: url("../imgs/clapping.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-left: 40px;
+    align-self: center;
+
+}
+.employees-tracker-page .employees-tracker-tab{
+    text-align: center;
+    opacity: 0.5;
+}
+
+.employees-tracker-page .employees-tracker-tab h6{
+    font-size: 13px
+}
+.employees-tracker-page .employees-tracker-tab .employees-tracker-number{
+    font-size: 36px
+}
+.employees-tracker-page .nav {
+    flex-wrap: nowrap
+}
+.employees-tracker-page .nav .nav-link{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.employees-tracker-page .nav .nav-link.active{
+    border-bottom: 0;
+}
+.employees-tracker-page .nav .nav-link.active .employees-tracker-tab{
+    opacity: 1;
+}
+**/
 @media (max-width:650px) {
 	.owl-carousel .owl-stage .active {
 		width: 160px !important;
