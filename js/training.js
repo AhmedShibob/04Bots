@@ -83,7 +83,7 @@ $('#back-courses').click(function () {
 
 // function related to live course page---
 function liveCourse() {
-	$('.btn-link').click(function() {
+	$('.showing').click(function() {
 		if( $(this).hasClass('collapsed') ) {
 			$('.btn-link i').css('transform', 'rotate(0deg)');
 			$(this).children('span').html('اخفاء');
@@ -107,6 +107,6 @@ $(document).ready(function() {
 
 	//working on action of leaving button
 	$('.course-content-live_leave').click(function() {
-		
+
 	});
 });

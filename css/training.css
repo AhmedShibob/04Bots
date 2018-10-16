@@ -182,7 +182,7 @@ margin-bottom: 4px
 }
 .mycourses_details_page .mycourses_details_precent>div:first-of-type{
     border-left: 1px solid #919191
-}
+}.events-section
 .mycourses_details_page .mycourses_details_precent span{
     color: #797979;
     font-weight: bold
@@ -216,6 +216,7 @@ margin-bottom: 4px
     background:#027ffc;
     float: none;
     padding: 4px 30px;
+}
 
 }
 .mycourses_training_page ul{
@@ -369,7 +370,6 @@ li::before {
   }
 
   .events-section {
-      margin-top: 330px;
       width: 90%;
       margin-right: 20px;
   }
@@ -385,7 +385,9 @@ li::before {
     margin-bottom: 0; 
     font-weight: bold;
     font-family: DIN-LIGHT;
-  }
+  }}
+}
+
   
   .agenda-events .agenda-event {
     padding: 25px 0;
@@ -438,6 +440,249 @@ li::before {
     font-size: 8px;
   }
   /*end agenda-events*/
+
+  /*Start course live now*/
+.accordion_live_course {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px
+}
+
+  .card_course_live {
+    width: 90%;
+    margin: auto;
+    border: 0;
+    border-radius: 10px!important;
+    overflow: hidden;
+}
+
+.card_course_live hr {
+    /* margin-bottom: 10px */
+}
+
+.card_course_live .live_course {
+    margin-bottom: 20px
+}
+
+.card_course_live .content {
+    padding: 20px;
+    padding-bottom: 0
+}
+
+.card_course_live .content .live_course {
+    display: flex
+}
+
+.card_course_live .content .live_course  img {
+    width: 91px;
+    height: 123px;
+    border-radius: 8px;
+}
+
+.card_course_live .content .live_course .content_course_live {
+    margin-right: 20px
+}
+
+.card_course_live .content .live_course .content_course_live h5 {
+    font-weight: 600;
+    display: flex;
+}
+
+.card_course_live .content .live_course .content_course_live h5 p {
+    margin-bottom: 0
+}
+
+.card_course_live .content .live_course .content_course_live h5 .sign {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.card_course_live .content .live_course .content_course_live h5 .sign .one {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #f73c39;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    animation: signingTwo 1s 1s alternate infinite ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+@keyframes signingTwo {
+    0% {transform: scale(2)}
+    100% {transform: scale(0)}
+}
+
+.card_course_live .content .live_course .content_course_live h5 .sign .two {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #f97d7d8a;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    z-index: 2;
+    animation: signing 1s 1s alternate infinite ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+@keyframes signing {
+    0% {transform: scale(0)}
+    100% {transform: scale(1)}
+}
+
+.card_course_live .content .live_course .content_course_live h6 {
+    font-size: 12px;
+    color: rgb(146, 146, 146);
+}
+
+.card_course_live .content .live_course .content_course_live .btns {
+    margin-top: 40px
+}
+
+.card_course_live .content .live_course .content_course_live .btns button {
+    border: 0;
+    width: 80px;
+    padding-bottom: 6px;
+    border-radius: 4px;
+    background-color: #929292;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transform: scale(.9);
+    transition: all .2s ease-in-out;
+}
+
+.card_course_live .content .live_course .content_course_live .btns button:first-of-type {
+    background-color: #6dd24e
+}
+
+.card_course_live .content .live_course .content_course_live .btns button:first-of-type:hover {
+    background-color: #52b135
+}
+
+.card_course_live .content .live_course .content_course_live .btns button:last-of-type {
+}
+
+.card_course_live .content .live_course .content_course_live .btns form {
+    position: relative;
+    top: -3px;
+    right: 4px;
+    width: 100%; 
+    background-color: #f73c39
+}
+
+.card_course_live .content .live_course .content_course_live .btns form .live-course_notice {
+     border: 1px solid #f73c39;
+    border-radius: 0 4px 4px 0; 
+}
+
+.card_course_live .content .live_course .content_course_live .btns form .live-course_action {
+    background-color: #f73c39;
+    border: 0;
+    outline: none;
+    color: #fff;
+    border-radius: 4px 0 0 4px 
+}
+
+/*Class using in jQuery to change status of its buttons when be pressed*/
+.disabled {
+    background-color: #929292!important
+}
+
+.red {
+    background-color: #f73c39!important
+}
+
+.card_course_live .card-header {
+    background-color: #0d7df9;
+    padding: 0
+}
+
+.card_course_live .card-header button {
+    color: #fff;
+    font-weight: 600;
+    display: block;
+    width: 100%
+}
+
+.card_course_live .card-header button span {
+    float: right;
+}
+
+.card_course_live .card-header button i {
+    float: left;
+    transition: all .5s ease-in-out
+}
+
+.card_course_live .card-body {
+    margin-bottom: 20px
+}
+
+.card_course_live .card-body .wrap-content {
+    display: flex
+}
+
+.card_course_live .card-body:first-of-type h6 {
+    font-weight: 600;
+    color: #0d7df9
+}
+
+.card_course_live .card-body h6 {
+    font-weight: 600;
+    color: #919191
+}
+
+.card_course_live .card-body .wrap-content p {
+    font-size: 12px
+}
+
+.card_course_live .card-body:first-of-type .wrap-content button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    display: block;
+    width: 150px;
+    background-color: #0d7df9;
+    color: #fff;
+    font-weight: 800;
+    height: 25px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.card_course_live .card-body .wrap-content button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    display: block;
+    width: 150px;
+    background-color: #929292;
+    color: #fff;
+    font-weight: 800;
+    height: 25px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 5%;
+    cursor: pointer;
+    cursor: default;
+    transition: all .2s ease-in-out
+}
+
 /*============== End Style for upcoming and monthly events ===================*/
 
 
@@ -598,62 +843,7 @@ li::before {
 	background: linear-gradient(left, #22ADD4, #1E98BA);
 }
 
-/********************************/
-/*       employees-tracker-page  */
-/******************************
-.employees-tracker-page .employees-tracker-header{
-    margin-bottom: 20px
-}
-.employees-tracker-page .employees-tracker-header .employees-tracker-avatar img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-.employees-tracker-page .employees-tracke-header-details{
-    margin-right: 10px;
-    align-self: center;
 
-}
-.employees-tracker-page .employees-tracke-header-details h6{
-    margin-bottom: 0
-}
-.employees-tracker-page .employees-tracke-header-details span{
-    font-size: 12px;
-}
-.employees-tracker-page .employees-tracker-header-icon{
-    background: url("../imgs/clapping.svg") no-repeat;
-    width: 30px;
-    height: 30px;
-    float: left;
-    margin-left: 40px;
-    align-self: center;
-
-}
-.employees-tracker-page .employees-tracker-tab{
-    text-align: center;
-    opacity: 0.5;
-}
-
-.employees-tracker-page .employees-tracker-tab h6{
-    font-size: 13px
-}
-.employees-tracker-page .employees-tracker-tab .employees-tracker-number{
-    font-size: 36px
-}
-.employees-tracker-page .nav {
-    flex-wrap: nowrap
-}
-.employees-tracker-page .nav .nav-link{
-    width: 100%;
-    border-bottom: 1px solid #ddd;
-}
-.employees-tracker-page .nav .nav-link.active{
-    border-bottom: 0;
-}
-.employees-tracker-page .nav .nav-link.active .employees-tracker-tab{
-    opacity: 1;
-}
-****/
 @media (max-width:650px) {
 	.owl-carousel .owl-stage .active {
 		width: 160px !important;
