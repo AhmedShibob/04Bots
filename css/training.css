@@ -357,90 +357,9 @@ li::before {
     cursor: pointer;
     color: #027ffc;
 }
-/*============== Start Style for upcoming and monthly events ===================*/
-/*start agenda-events*/
-/* .box-shadow {
-    -wbkit-box-shadow: 0 3px 10px #dddddd;
-    -webkit-box-shadow: 0 3px 10px #dddddd;
-            box-shadow: 0 3px 10px #dddddd;
-    border-radius: 8px;
-  }
-
-  .events-section {
-      margin-top: 330px;
-      width: 90%;
-      margin-right: 20px;
-  }
-  
-  .agenda-events {
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .agenda-events .title-agenda-event {
-    text-transform: uppercase;
-    font-size: 16px;
-    margin-bottom: 0; 
-    font-weight: bold;
-    font-family: DIN-LIGHT;
-  }
-  
-  .agenda-events .agenda-event {
-    padding: 25px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-bottom: 1px solid #ddd;
-    margin-right: 0!important
-  }
-  
-  .agenda-events .agenda-event:last-of-type {
-    border: 0;
-  }
-  
-  .agenda-events .avatar {
-    width: 60px;
-    overflow: hidden;
-    margin-left: 20px;
-  }
-  
-  .agenda-events .avatar img {
-    border-radius: 50%;
-    height: 60px;
-  }
-  
-  .agenda-events .details-event {
-    margin-top: 8px
-  }
-  
-  .agenda-events .details-event h5 {
-    margin-bottom: 6px;
-    font-size: 15px;
-    color: #4e4e4e;
-    font-family: DIN-MEDIUM;
-  }
-  
-  .agenda-events .details-event p {
-    font-size: 10px;
-    color: #4e4e4e;
-    margin-bottom: 0;
-  }
-  
-  .agenda-events .time-event {
-    color: #4e4e4e;
-    font-size: 13px;
-  }
-  
-  .agenda-events .time-event i {
-    color: #ff5700;
-    font-size: 8px;
-  } */
-  /*end agenda-events*/
-/*============== End Style for upcoming and monthly events ===================*/
-
 
 /*============== Start Style for upcoming and monthly events ===================*/
-/*start agenda-events*/
+/*start events-section-agenda*/
 .box-shadow {
     -wbkit-box-shadow: 0 3px 10px #dddddd;
     -webkit-box-shadow: 0 3px 10px #dddddd;
@@ -453,15 +372,15 @@ li::before {
     margin: auto
 }
   
-.events-section .agenda-events {
+.events-section .events-section-agenda {
     padding: 20px;
     margin-bottom: 20px;
 }
 
-.agenda-events .agenda-event {
+.events-section-agenda .agenda-event {
     padding: 20px;
-    margin-bottom: 20px;
-    padding: 25px 0;
+    margin-bottom: 10px;
+    padding: 10px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -469,65 +388,69 @@ li::before {
     margin-right: 0!important
 }
 
-.agenda-events .agenda-event:last-of-type {
+.events-section-agenda .agenda-event:last-of-type {
     border: 0;
+    margin-bottom: 0
 }
   
-.agenda-events .agenda-events .title-agenda-event {
+.events-section-agenda .events-section-agenda-title {
     text-transform: uppercase;
     font-size: 16px;
     margin-bottom: 0; 
     font-weight: bold;
     font-family: DIN-LIGHT;
+    color: #4e4e4e
 }
-  
-  .agenda-events .avatar {
+
+.events-section-agenda .avatar {
     width: 60px;
     overflow: hidden;
-    margin-left: 20px;
-  }
+margin-left: 20px;
+}
   
-  .agenda-events .avatar img {
+  .events-section-agenda .avatar img {
     border-radius: 50%;
     height: 60px;
   }
   
-  .agenda-events .details-event {
+  .events-section-agenda .details-event {
     margin-top: 8px
   }
   
-  .agenda-events .details-event h5 {
+  .events-section-agenda .details-event h5 {
     margin-bottom: 6px;
     font-size: 15px;
     color: #4e4e4e;
     font-family: DIN-MEDIUM;
   }
   
-  .agenda-events .details-event p {
+  .events-section-agenda .details-event p {
     font-size: 10px;
     color: #4e4e4e;
     margin-bottom: 0;
   }
   
-  .agenda-events .time-event {
+  .events-section-agenda .time-event {
     color: #4e4e4e;
     font-size: 13px;
   }
   
-  .agenda-events .time-event i {
+  .events-section-agenda .time-event i {
     color: #ff5700;
     font-size: 8px;
+    float: left;
+    margin-top: 5px
   }
-  /*end agenda-events*/
+  /*end events-section-agenda*/
 
   /*Start course live now*/
-.accordion_live_course {
+.accordion-live-course {
     width: 95%;
     margin: auto;
     margin-bottom: 20px
 }
 
-  .card_course_live {
+  .accordion-live-course-card {
     width: 90%;
     margin: auto;
     border: 0;
@@ -535,43 +458,43 @@ li::before {
     overflow: hidden;
 }
 
-.card_course_live hr {
+.accordion-live-course-card hr {
     /* margin-bottom: 10px */
 }
 
-.card_course_live .live_course {
+.accordion-live-course-card .live-course {
     margin-bottom: 20px
 }
 
-.card_course_live .content {
+.accordion-live-course-card .content {
     padding: 20px;
     padding-bottom: 0
 }
 
-.card_course_live .content .live_course {
+.accordion-live-course-card .content .live-course {
     display: flex
 }
 
-.card_course_live .content .live_course  img {
+.accordion-live-course-card .content .live-course  img {
     width: 91px;
     height: 123px;
     border-radius: 8px;
 }
 
-.card_course_live .content .live_course .content_course_live {
+.accordion-live-course-card .content .live-course .content_course_live {
     margin-right: 20px
 }
 
-.card_course_live .content .live_course .content_course_live h5 {
+.accordion-live-course-card .content .live-course .content_course_live h5 {
     font-weight: 600;
     display: flex;
 }
 
-.card_course_live .content .live_course .content_course_live h5 p {
+.accordion-live-course-card .content .live-course .content_course_live h5 p {
     margin-bottom: 0
 }
 
-.card_course_live .content .live_course .content_course_live h5 .sign {
+.accordion-live-course-card .content .live-course .content_course_live h5 .sign {
     height: 30px;
     width: 30px;
     margin-right: 10px;
@@ -580,7 +503,7 @@ li::before {
     position: relative;
 }
 
-.card_course_live .content .live_course .content_course_live h5 .sign .one {
+.accordion-live-course-card .content .live-course .content_course_live h5 .sign .one {
     display: block;
     height: 10px;
     width: 10px;
@@ -599,7 +522,7 @@ li::before {
     100% {transform: scale(0)}
 }
 
-.card_course_live .content .live_course .content_course_live h5 .sign .two {
+.accordion-live-course-card .content .live-course .content_course_live h5 .sign .two {
     display: block;
     height: 25px;
     width: 25px;
@@ -618,16 +541,16 @@ li::before {
     100% {transform: scale(1)}
 }
 
-.card_course_live .content .live_course .content_course_live h6 {
+.accordion-live-course-card .content .live-course .content_course_live h6 {
     font-size: 12px;
     color: rgb(146, 146, 146);
 }
 
-.card_course_live .content .live_course .content_course_live .btns {
+.accordion-live-course-card .content .live-course .content_course_live .btns {
     margin-top: 40px
 }
 
-.card_course_live .content .live_course .content_course_live .btns button {
+.accordion-live-course-card .content .live-course .content_course_live .btns button {
     border: 0;
     width: 80px;
     padding-bottom: 6px;
@@ -640,29 +563,42 @@ li::before {
     transition: all .2s ease-in-out;
 }
 
-.card_course_live .content .live_course .content_course_live .btns button:first-of-type {
+.hide_btn {
+    opacity: 0!important;
+    visibility: hidden!important
+}
+.show_btn {
+    opacity: 1!important;
+    visibility: visible!important
+}
+
+.accordion-live-course-card .content .live-course .content_course_live .btns button:first-of-type {
     background-color: #6dd24e
 }
 
-.card_course_live .content .live_course .content_course_live .btns button:first-of-type:hover {
+.accordion-live-course-card .content .live-course .content_course_live .btns button:first-of-type:hover {
     background-color: #52b135
 }
 
-.card_course_live .content .live_course .content_course_live .btns button:last-of-type {
+.accordion-live-course-card .content .live-course .content_course_live .btns button:last-of-type {
 }
 
-.card_course_live .content .live_course .content_course_live .btns form {
+.accordion-live-course-card .content .live-course .content_course_live .btns form {
     width: 100%;
+    opacity: 0;
+    visibility: hidden;
     transition: all .2s ease-in-out;
-    display: none;
+    position: relative;
+    top: -29px;
 }
 
-.card_course_live .content .live_course .content_course_live .btns form .live-course_notice {
+.accordion-live-course-card .content .live-course .content_course_live .btns form .live-course_notice {
     border: 1px solid #f73c39;
     border-radius: 0 4px 4px 0;
+    padding-right: 4px
 }
 
-.card_course_live .content .live_course .content_course_live .btns form .live-course_action {
+.accordion-live-course-card .content .live-course .content_course_live .btns form .live-course_action {
     background-color: #f73c39;
     border: 0;
     outline: none;
@@ -680,50 +616,54 @@ li::before {
     background-color: #f73c39!important
 }
 
-.card_course_live .card-header {
+.accordion-live-course-card .card-header {
     background-color: #0d7df9;
-    padding: 0
+    padding: 0;
+    height: 30px
 }
 
-.card_course_live .card-header button {
+.accordion-live-course-card .card-header button {
     color: #fff;
     font-weight: 600;
     display: block;
     width: 100%
 }
 
-.card_course_live .card-header button span {
+.accordion-live-course-card .card-header button span {
     float: right;
+    margin-top: -2px;
+    font-size: 12px
 }
 
-.card_course_live .card-header button i {
+.accordion-live-course-card .card-header button i {
     float: left;
     transition: all .5s ease-in-out
 }
 
-.card_course_live .card-body {
+.accordion-live-course-card .card-body {
     margin-bottom: 20px
 }
 
-.card_course_live .card-body .wrap-content {
+.accordion-live-course-card .card-body .wrap-content {
     display: flex
 }
 
-.card_course_live .card-body:first-of-type h6 {
+.accordion-live-course-card .card-body:first-of-type h6 {
     font-weight: 600;
     color: #0d7df9
 }
 
-.card_course_live .card-body h6 {
+.accordion-live-course-card .card-body h6 {
     font-weight: 600;
-    color: #919191
+    color: #696969
 }
 
-.card_course_live .card-body .wrap-content p {
-    font-size: 12px
+.accordion-live-course-card .card-body .wrap-content p {
+    font-size: 12px;
+    color: #9c9c9c
 }
 
-.card_course_live .card-body:first-of-type .wrap-content button {
+.accordion-live-course-card .card-body:first-of-type .wrap-content button {
     padding: 0;
     margin: 0;
     border: 0;
@@ -741,7 +681,7 @@ li::before {
     cursor: pointer;
 }
 
-.card_course_live .card-body .wrap-content button {
+.accordion-live-course-card .card-body .wrap-content button {
     padding: 0;
     margin: 0;
     border: 0;

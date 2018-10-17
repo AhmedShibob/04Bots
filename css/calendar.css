@@ -859,7 +859,8 @@
 
 .flatpickr-calendar .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days span {
   height: 35px!important;
-  line-height: 35px!important;
+  line-height: 30px!important;
   max-width: 35px!important;
-  border-radius: 50%!important
+  border-radius: 50%!important;
+  font-weight: 800
 }

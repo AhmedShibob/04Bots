@@ -101,14 +101,20 @@ $(document).ready(function() {
 		$(this).attr('disabled', 'disabled');
 		if($(this).attr('disabled')) {
 			$(this).addClass('disabled');
-			$('.course-content-live_leave').addClass('red');
+			$('.course-content-live_leave').css({'background-color': 'red'});
 		}
 	});
 
-	//working on action of leaving button
+	//events to handle colors on btn in agenda tap
 	$('.course-content-live_leave').click(function() {
-		$(this).slideUp(500);
-		$(this).siblings('button').slideUp(500);
-		$('.content_course_live .btns .noticing_form').slideDown(400);
+		$(this).addClass('hide_btn').removeClass('show_btn');
+		$(this).siblings('button').addClass('hide_btn').removeClass('show_btn');
+		$('.content_course_live .btns .noticing_form').addClass('show_btn').removeClass('hide_btn');
 	});
+	
+	$('.accordion-live-course-card .content .live-course .content_course_live .btns form .live-course_action').click(function() {
+		$('.content_course_live .btns .noticing_form').addClass('hide_btn').removeClass('show_btn');
+		$('.course-content-live_leave').addClass('show_btn').removeClass('hide_btn').html('تم الانصراف').css({width: '105px', 'background-color': '#929292'}).attr('disabled', 'disabled');
+		$('.course-content-live_leave').siblings('button').addClass('show_btn').removeClass('hide_btn');
+	})
 });
