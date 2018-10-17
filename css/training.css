@@ -87,7 +87,6 @@ margin-bottom: 4px
 
 .starrr {
     display: block; 
-    float: right;
 }
 .starrr a {
     font-size: 10px;
@@ -339,6 +338,14 @@ margin-bottom: 4px
     cursor: pointer;
     color: #0d7df9;
 }
+.hide_btn {
+    opacity: 0!important;
+    visibility: hidden!important
+ }
+ .show_btn {
+    opacity: 1!important;
+    visibility: visible!important
+ }
 /*============== Start Style for upcoming and monthly events ===================*/
 /*start agenda-events*/
 .box-shadow {
