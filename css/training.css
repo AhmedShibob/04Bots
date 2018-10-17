@@ -30,11 +30,21 @@ nav .nav{
 .mycourses-out{
 margin-top: 20px;
 }
+.mycourses-out-group-btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.mycourses-out-group-btns .btn-mycourses-out{
+    background: #0d7df9;
+    color: #fff
+}
 .mycourses-online .card-courseInfo-content{
     margin-bottom: 0;
 }
 .mycourses-online .starrr{
-margin-bottom: 4px
+    margin-bottom: 4px
 }
 .mycourses-online .mycourses-online-note{
     text-align: center;
@@ -769,20 +779,24 @@ margin-bottom: 4px
     border-radius: 50%
     
 }
-.leaderBoard  .leaderBoard-icons{
+.leaderBoard  .leaderBoard-icons,
+.profilePage .profilePage-header-icons{
     display: flex;
     padding: 0;
     margin: 0
 }
-.leaderBoard  .leaderBoard-icons li{
+.leaderBoard  .leaderBoard-icons li,
+.profilePage .profilePage-header-icons li{
     margin-left: 4px;
     width: 20px;
     height: 20px;
-}
-.leaderBoard  .leaderBoard-icons .leaderBoard-icons-award{
+}   
+.leaderBoard  .leaderBoard-icons .leaderBoard-icons-award,
+.profilePage .profilePage-header-icons-award{
     background: url('../imgs/award.svg') no-repeat;
 }
-.leaderBoard  .leaderBoard-icons .leaderBoard-icons-smile{
+.leaderBoard  .leaderBoard-icons .leaderBoard-icons-smile,
+.profilePage .profilePage-header-icons-smile{
     background: url('../imgs/smile.svg') no-repeat;
 }
 .leaderBoard .leaderBoard-presentation{
@@ -816,7 +830,65 @@ margin-bottom: 4px
     left: 24px;
     top: 16px;
 }
+
 /*============== end Style for leaderboard ===================*/
+
+/*============== start Style for profilePage===================*/
+.profilePage  .profilePage-header-back{
+  width: 100%;
+  height: 200px;
+  background: url('../imgs/background.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.profilePage .profilePage-header-back .profilePage-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6)
+}
+.profilePage .profilePage-header .media{
+    padding: 0 30px;
+    position: absolute;
+    top: 13%;
+}
+.profilePage .profilePage-image{
+    position: relative;
+    height: 13rem;
+    width: 10rem;
+    top: -.75rem;
+    border: 4px solid #fdd93a;
+    border-radius: 10px;
+    overflow: hidden
+} 
+.profilePage .profilePage-img{
+    height: 100%    ;
+}
+.profilePage .profilePage-header .profilePage-name,
+.profilePage .profilePage-header .profilePage-position{
+    color: #ffff;
+    margin-bottom: 0
+}
+.profilePage .profilePage-header .profilePage-details{
+    position: relative;
+}
+.profilePage .profilePage-header .profilePage-name i{
+    font-size: .8rem
+}
+.profilePage .profilePage-header .profilePage-des{
+    position: relative;
+    top:2.5rem;
+    font-size: 13px;
+}
+.profilePage .profilePage-header .profilePage-des p{
+    margin-bottom: .5rem
+}
+/*============== end Style for profilePage===================*/
 .in-progress {
 	direction: rtl;
 	text-align: right;
