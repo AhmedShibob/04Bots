@@ -31,52 +31,98 @@ $('#back-courses').click(function () {
 });
 });
 
- $(document).ready(function() {
+$(document).ready(function() {
+
 	/* change icon svg background */
-	$(".heart-img").click(function() {
-		$(this).toggleClass("heart-icon");
-	});
-	$(".calender-img").click(function() {
-		$(this).toggleClass("calenderhover");
-	})
-	/* datapickr calender */
-	$(function() {
-		$('.datepicker-me-class').datepicker({
-			language: 'es',
-			weekStart: 1,
-			todayBtn: true,
-			autoclose: true,
-			todayHighlight: true,
-			startView: 2,
-			minViewMode: 2,
-			forceParse: false
-		});
-		$('.to_icon').on('click', function() {
-			$('#date2').datepicker('show');
-    });
-    $('.to_icon2').on('click', function() {
-			$('#date111').datepicker('show');
-	});
-	
-	$('.datepicker-me-class').on('changeDate', function() {
-		let valdate = $('#date2 .in').val();
-		 let scliceByDat = valdate.slice(3,5)
-		console.log( scliceByDat );
-		
-		});
+
+	$(".card-react-heartImg").click(function() {
+
+		$(this).toggleClass("heartHover");
 
 	});
+
+	$(".card-react-calenderImg").click(function() {
+
+		$(this).toggleClass("calenderHover");
+
+	})
+
+	/* datapickr calender */
+
+	$(function() {
+
+		$('.datepicker-me-class').datepicker({
+
+			language: 'es',
+
+			weekStart: 1,
+
+			todayBtn: true,
+
+			autoclose: true,
+
+			todayHighlight: true,
+
+			startView: 2,
+
+			minViewMode: 2,
+
+			forceParse: false
+
+		});
+
+		$('.card-react-calenderImg').on('click', function() {
+
+			$('#date2').datepicker('show');
+
+    });
+
+    $('.to_icon2').on('click', function() {
+
+			$('#date111').datepicker('show');
+
+	});
+
+	
+
+	$('.datepicker-me-class').on('changeDate', function() {
+
+		let valdate = $('#date2 .in').val();
+
+		 let scliceByDat = valdate.slice(3,5)
+
+		console.log( scliceByDat );
+
+		
+
+		});
+
+
+
+	});
+
 	/* horizontal scroll for carts by owl carousel.js */
+
 	$('.owl-carousel.owl-drag .owl-item').removeClass("owl-item").addClass("owel-item--custom");
+
 	$('.owl-carousel').owlCarousel({
+
 		loop: false,
+
 		rtl: true,
+
 		margin: 10,
+
 		autoplayHoverPause: true,
+
 		center: true,
+
   });
+
   $('.owl-stage .owl-item').removeClass("owl-item").addClass("owel-item--custom");
+
 });
+
 
 // function related to live course page---
 function liveCourse() {
