@@ -74,7 +74,7 @@ margin-bottom: 4px
     top: 4px;
 }
 .mycourses-gray-header i,.employees-tracker-page .employees-tracker-tab,
-.mycourses-complete-page .btn-exam{
+.leaderBoard .leaderBoard-presentation{
     -webkit-transition: all .4s ease-in-out 0s;
     -moz-transition: all .4s ease-in-out 0s;
     -o-transition: all .4s ease-in-out 0s;
@@ -753,6 +753,66 @@ margin-bottom: 4px
 /*============== End Style for upcoming and monthly events ===================*/
 
 
+/*============== start Style for leaderboard ===================*/
+.leaderBoard .card-vertical {
+    padding: 5px 20px;
+    position: relative
+}
+.leaderBoard .leaderBoard-line{
+    margin: 20px;
+    background: #ddd;
+}
+.leaderBoard .card-vertical-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%
+    
+}
+.leaderBoard  .leaderBoard-icons{
+    display: flex;
+    padding: 0;
+    margin: 0
+}
+.leaderBoard  .leaderBoard-icons li{
+    margin-left: 4px;
+    width: 20px;
+    height: 20px;
+}
+.leaderBoard  .leaderBoard-icons .leaderBoard-icons-award{
+    background: url('../imgs/award.svg') no-repeat;
+}
+.leaderBoard  .leaderBoard-icons .leaderBoard-icons-smile{
+    background: url('../imgs/smile.svg') no-repeat;
+}
+.leaderBoard .leaderBoard-presentation{
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: .5;
+
+}
+.leaderBoard .leaderBoard-presentation:hover{
+    opacity: 1;
+    color: #6f7070;
+}
+.leaderBoard .leaderBoard-presentation .leaderBoard-presentation-icon{
+    background: url('../imgs/presentation.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+.leaderBoard .leaderBoard-clapping{
+    background: url('../imgs/clapping.svg') no-repeat;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 24px;
+    top: 16px;
+}
+/*============== end Style for leaderboard ===================*/
 .in-progress {
 	direction: rtl;
 	text-align: right;

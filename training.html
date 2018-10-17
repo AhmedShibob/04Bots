@@ -29,11 +29,10 @@
 
         <nav>
             <!--Start main nav-->
-            <div class="nav justify-content-center shadow-sm  rounded" id="nav-tab" role="tablist">
+            <div class="nav justify-content-center shadow-sm " id="nav-tab" role="tablist">
+                <a class="nav-item nav-link" id="nav-leaderboard-tab" data-toggle="tab" href="#nav-leaderboard" role="tab" aria-controls="nav-leaderboard" aria-selected="true">المتصدرين</a>
                 <a class="nav-item nav-link active " id="nav-agenda-tab" data-toggle="tab" href="#nav-agenda" role="tab" aria-controls="nav-agenda" aria-selected="true">الأجنده</a>
-
                 <a class="nav-item nav-link" id="nav-mycourses-tab" data-toggle="tab" href="#nav-mycourses" role="tab" aria-controls="nav-mycourses" aria-selected="false">دوراتى</a>
-
                 <a class="nav-item nav-link" id="nav-courses-tab" data-toggle="tab" href="#nav-courses" role="tab" aria-controls="nav-courses" aria-selected="false">الدورات</a>
             </div>
         </nav>
@@ -49,7 +48,83 @@
     <!--End wrapper-->
 
     <div class="tab-content" id="nav-tabContent">
-
+       <!--========== Start leaderboard==========-->
+       <div class="tab-pane fade" id="nav-leaderboard" role="tabpanel" aria-labelledby="nav-leaderboard-tab">
+            <div class="leaderBoard">
+                <div class="card-vertical shadow-sm card-vertical rounded media">
+                    <div class="align-self-start">
+                        <img class="card-vertical-img" src="images/test.png" alt="name.....">
+                    </div>
+                    <div class="card-vertical-details media-body">
+                        <h5 class="card-vertical-title color_gray">أحمد ابراهيم احمد</h5>
+                        <span class="card-vertical-name">محصل قضائى أول</span>
+                        <ul class="list-unstyled leaderBoard-icons">
+                            <li class="leaderBoard-icons-award"></li>
+                            <li class="leaderBoard-icons-smile"></li>
+                            <li class="leaderBoard-icons-award"></li>
+                            <li class="leaderBoard-icons-smile"></li>
+                            <li class="leaderBoard-icons-award"></li>
+                            <li class="leaderBoard-icons-smile"></li>
+                            <li class="leaderBoard-icons-award"></li>
+                            <li class="leaderBoard-icons-smile"></li>
+                        </ul>
+                        <a href="" class="leaderBoard-presentation color_gray">
+                            <span class="leaderBoard-presentation-number">50</span>
+                            <span class="leaderBoard-presentation-icon"></span>
+                        </a>
+                    </div>
+                </div>
+               <hr class="leaderBoard-line">
+               <div class="card-vertical shadow-sm card-vertical rounded media">
+                    <div class="align-self-start">
+                        <img class="card-vertical-img" src="images/test.png" alt="name.....">
+                    </div>
+                    <div class="leaderBoard-clapping"></div>
+                    <div class="card-vertical-details media-body">
+                        <h5 class="card-vertical-title color_gray">أحمد ابراهيم احمد</h5>
+                        <span class="card-vertical-name">محصل قضائى أول</span>
+                        <ul class="list-unstyled leaderBoard-icons">
+                            <li class="leaderBoard-icons-award"></li>
+                            <li class="leaderBoard-icons-smile"></li>
+                            <li class="leaderBoard-icons-award"></li>
+                            <li class="leaderBoard-icons-smile"></li>
+                            <li class="leaderBoard-icons-award"></li>
+                            <li class="leaderBoard-icons-smile"></li>
+                            <li class="leaderBoard-icons-award"></li>
+                            <li class="leaderBoard-icons-smile"></li>
+                        </ul>
+                        <a href="" class="leaderBoard-presentation color_gray">
+                            <span class="leaderBoard-presentation-number">1</span>
+                            <span class="leaderBoard-presentation-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-vertical shadow-sm card-vertical rounded media">
+                        <div class="align-self-start">
+                            <img class="card-vertical-img" src="images/test.png" alt="name.....">
+                        </div>
+                        <div class="leaderBoard-clapping"></div>
+                        <div class="card-vertical-details media-body">
+                            <h5 class="card-vertical-title color_gray">أحمد ابراهيم احمد</h5>
+                            <span class="card-vertical-name">محصل قضائى أول</span>
+                            <ul class="list-unstyled leaderBoard-icons">
+                                <li class="leaderBoard-icons-award"></li>
+                                <li class="leaderBoard-icons-smile"></li>
+                                <li class="leaderBoard-icons-award"></li>
+                                <li class="leaderBoard-icons-smile"></li>
+                                <li class="leaderBoard-icons-award"></li>
+                                <li class="leaderBoard-icons-smile"></li>
+                                <li class="leaderBoard-icons-award"></li>
+                                <li class="leaderBoard-icons-smile"></li>
+                            </ul>
+                            <a href="" class="leaderBoard-presentation color_gray">
+                                <span class="leaderBoard-presentation-number">1</span>
+                                <span class="leaderBoard-presentation-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
         <!--========== Start Calendar ==========-->
         <div class="tab-pane fade show active" id="nav-agenda" role="tabpanel" aria-labelledby="nav-agenda-tab">
 
@@ -273,7 +348,7 @@
         <div class="tab-pane fade" id="nav-mycourses" role="tabpanel" aria-labelledby="nav-mycourses-tab">
             <nav>
                 <!--Start branch nav-->
-                <div class="nav justify-content-center shadow-sm  rounded" id="nav-tab" role="tablist">
+                <div class="nav justify-content-center shadow-sm" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active " id="nav-mycourses-out-tab" data-toggle="tab" href="#nav-mycourses-out" role="tab" aria-controls="nav-mycourses-out" aria-selected="true">الدورات الفعليه</a>
                     <a class="nav-item nav-link" id="nav-mycourses-online-tab" data-toggle="tab" href="#nav-mycourses-online" role="tab" aria-controls="nav-mycourses-online" aria-selected="false">دورات online</a>
                 </div>
