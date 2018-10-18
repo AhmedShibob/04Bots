@@ -38,7 +38,9 @@ margin-top: 20px;
 }
 .mycourses-out-group-btns .btn-mycourses-out{
     background: #0d7df9;
-    color: #fff
+    color: #fff;
+    margin: 10px;
+    width: 100%
 }
 .mycourses-online .card-courseInfo-content{
     margin-bottom: 0;
@@ -852,10 +854,13 @@ margin-top: 20px;
     left: 0;
     background: rgba(0, 0, 0, 0.6)
 }
+.profilePage .profilePage-header .align-self-start{
+    position: relative
+}
 .profilePage .profilePage-header .media{
     padding: 0 30px;
-    position: absolute;
-    top: 13%;
+    position: relative;
+    top: -5rem;
 }
 .profilePage .profilePage-image{
     position: relative;
@@ -866,6 +871,20 @@ margin-top: 20px;
     border-radius: 10px;
     overflow: hidden
 } 
+.profilePage .profilePage-image-icon{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #fdd93a;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom:-.2rem;
+}
 .profilePage .profilePage-img{
     height: 100%    ;
 }
@@ -887,6 +906,119 @@ margin-top: 20px;
 }
 .profilePage .profilePage-header .profilePage-des p{
     margin-bottom: .5rem
+}
+.profilePage .profilePage-nav{
+    background: #f9f9f9f9;
+    font-family: DIN-MEDIUM;
+    margin-bottom: 15px;
+    margin-top: -3.5rem;
+    padding: 0 1.3rem;
+    justify-content: start !important
+}
+.profilePage .profilePage-nav .nav-link{
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+}
+.profilePage .profilePage-certifiate{
+    padding: 2rem 0;
+    cursor: col-resize;
+}
+/*profilePage-content*/
+.profilePage-content{
+    padding:1rem 3rem
+}
+.profilePage-content .profilePage-content-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem
+}
+.profilePage-content .profilePage-content-header-icon{
+    display: inline-block;
+    background: url('../imgs/information-button.svg') no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: inline-block;
+    top: .2rem;
+    right: .4rem
+}
+.profilePage-content .profilePage-calender .input-group {
+    width: 100px;
+    border: 1px solid #0d7df9;
+    border-radius: 4px;
+    color: #0d7df9;
+    padding: .1rem .4rem;
+}
+.profilePage-content .profilePage-calender .form-control {
+    color: #0d7df9;
+    border: 0;
+    text-decoration: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    height: auto;
+    font-size: .8rem;
+    font-weight: bold
+}
+.profilePage-content .profilePage-content-chart1{
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative
+}
+.profilePage-content .profilePage-content-chart1::after{
+    content: '';
+    height: 28%;
+    width: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.74);
+    bottom: 5rem;
+}
+.profilePage-content .profilePage-content-chart1.hidden-shadow::after{
+    display: none
+}
+.profilePage-content .profilePage-chart-item{
+    width: 50%;
+    padding: 2rem;
+    border-bottom: 1px solid #ddd
+
+}
+.profilePage-content .profilePage-chart-item:nth-last-of-type(2),
+.profilePage-content .profilePage-chart-item:nth-last-of-type(3){
+    border-bottom: 0
+}
+.profilePage-content .profilePage-chart-item:nth-of-type(odd){
+    border-left: 1px solid #ddd
+}
+.profilePage-content .profilePage-chart-item-percent .profilePage-percent-number{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0;
+}
+.profilePage-content .profilePage-chart-item-percent .profilePage-percent-title{
+    font-size: 1.5rem;
+    font-family: DIN-MEDIUM
+}
+.profilePage-content .profilePage-chart-loadMore{
+    width: 100%
+}
+.profilePage-content .profilePage-chart-loadMore a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    float: left;
+    margin: 10px;
+    display: block;
+
+}
+.profilePage-content .profilePage-chart-item_hidden{
+    display: none;
+}
+.profilePage-content .profilePage-line{
+    border-top: 2px solid #ddd
+
 }
 /*============== end Style for profilePage===================*/
 .in-progress {

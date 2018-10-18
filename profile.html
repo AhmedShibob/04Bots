@@ -22,12 +22,13 @@
     <link rel="stylesheet" href="css/training.css">
     <title>!</title>
 </head>
+
 <body>
     <div class="wrapper">
         <!--Start profile page-->
         <div class="profilePage">
+            <!--profilePage-header-->
             <div class="profilePage-header">
-
                 <div class="profilePage-header-back">
                     <div class="profilePage-overlay"></div>
                 </div>
@@ -36,6 +37,7 @@
                         <div class="profilePage-image shadow-sm">
                             <img class="profilePage-img" src="imgs/profile.png">
                         </div>
+                        <div class="profilePage-image-icon"><i class="far fa-smile"></i></div>
                     </div>
                     <div class="media-body mr-3">
                         <div class="profilePage-details">
@@ -55,7 +57,125 @@
                 </div>
 
             </div>
+            <nav>
+                <!--main nav-->
+                <div class="nav profilePage-nav" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-training-tab" data-toggle="tab" href="#nav-training" role="tab" aria-controls="nav-training">التدريب</a>
+                    <a class="nav-item nav-link " id="nav-egabi-tab" data-toggle="tab" href="#nav-egabi" role="tab" aria-controls="nav-egabi">ايجابى</a>
+                    <a class="nav-item nav-link" id="nav-marafi-tab" data-toggle="tab" href="#nav-marafi" role="tab" aria-controls="nav-marafi">المعرفى</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <!--========== training==========-->
+                <div class="tab-pane fade  show active" id="nav-training" role="tabpanel" aria-labelledby="nav-training-tab">
+                    <div class="profilePage-content">
+                        <div class="profilePage-content-header">
+                            <h5 class="profilePage-content-header-title">الأداء<span class="profilePage-content-header-icon"></span></h5>
+                            <div class="profilePage-calender">
+                                <div class='input-group date' id='profilePage-date'>
+                                    <input class="form-control in" type='text' value="اليوم"> <span class="input-group-addon"><i class="fas fa-angle-down"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profilePage-content-chart1">
+                            <div class="profilePage-chart-item moreBox">
+                                <div class="profilePage-chart-item-percent">
+                                    <h3 class="profilePage-percent-number">99%</h3>
+                                    <span class="profilePage-percent-title color-gray"> التأخير</span>
+                                </div>
+                            </div>
+                            <div class="profilePage-chart-item moreBox">
+                                <div class="profilePage-chart-item-percent">
+                                    <h3 class="profilePage-percent-number">99%</h3>
+                                    <span class="profilePage-percent-title color-gray"> المقرر</span>
+                                </div>
+                            </div>
+                            <div class="profilePage-chart-item moreBox">
+                                <div class="profilePage-chart-item-percent">
+                                    <h3 class="profilePage-percent-number">99%</h3>
+                                    <span class="profilePage-percent-title color-gray"> التأخير</span>
+                                </div>
+                            </div>
+                            <div class="profilePage-chart-item moreBox">
+                                <div class="profilePage-chart-item-percent">
+                                    <h3 class="profilePage-percent-number">99%</h3>
+                                    <span class="profilePage-percent-title color-gray"> المقرر</span>
+                                </div>
+                            </div>
+                            <div class="profilePage-chart-item moreBox profilePage-chart-item_hidden">
+                                <div class="profilePage-chart-item-percent">
+                                    <h3 class="profilePage-percent-number">99%</h3>
+                                    <span class="profilePage-percent-title color-gray"> التأخير</span>
+                                </div>
+                            </div>
+                            <div class="profilePage-chart-item moreBox profilePage-chart-item_hidden">
+                                <div class="profilePage-chart-item-percent">
+                                    <h3 class="profilePage-percent-number">99%</h3>
+                                    <span class="profilePage-percent-title color-gray"> المقرر</span>
+                                </div>
+                            </div>
+                            <div class="profilePage-chart-loadMore" id="loadMore">
+                                <a href="#">عرض المزيد .....</a>
+                            </div>
+                        </div>
+                        <hr class="profilePage-line">
+                        <div class="profilePage-content-header">
+                            <h5 class="profilePage-content-header-title">الشهادات<span class="profilePage-content-header-icon"></span></h5>
+                        </div>
+                        <div class="profilePage-certifiate">
+                            <div class="scroll-left owl-carousel" id="scroll-left">
+                                <div class="item profilePage-certifiate-icon">
+                                    <svg width="6rem" height="6rem" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <image xlink:href="imgs/certifiate.svg" x="0" y="0" height="100%" width="100%" />
+                                    </svg>
+                                </div>
+                                <div class="item profilePage-certifiate-icon">
+                                    <svg width="6rem" height="6rem" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <image xlink:href="imgs/certifiate.svg" x="0" y="0" height="100%" width="100%" />
+                                    </svg>
+                                </div>
+                                <div class="item profilePage-certifiate-icon">
+                                    <svg width="6rem" height="6rem" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <image xlink:href="imgs/certifiate.svg" x="0" y="0" height="100%" width="100%" />
+                                    </svg>
+                                </div>
+                                <div class="item profilePage-certifiate-icon">
+                                    <svg width="6rem" height="6rem" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <image xlink:href="imgs/certifiate.svg" x="0" y="0" height="100%" width="100%" />
+                                    </svg>
+                                </div>
+                                <div class="item profilePage-certifiate-icon">
+                                    <svg width="6rem" height="6rem" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <image xlink:href="imgs/certifiate.svg" x="0" y="0" height="100%" width="100%" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="profilePage-line">
+                        <div class="profilePage-content-header">
+                            <h5 class="profilePage-content-header-title">المتصدرين<span class="profilePage-content-header-icon"></span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 </body>
+<!--========== End mycourses ==========-->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!--Date Picker JS-->
+<script src="js/plugin/bootstrap-datapicker.js"></script>
+<!--Owl Carousel JS-->
+<script src="js/plugin/owl-min.js"></script>
+<!--Start for rating JS-->
+<script src="js/plugin/stars.js"></script>
+<!--Calendar page JS-->
+<script src="js/calendar.js"></script>
+<!--Main js for all bot-->
+<script src="js/training.js"></script>
+
 </html>

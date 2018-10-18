@@ -75,7 +75,10 @@ $(document).ready(function() {
 
 			$('#date2').datepicker('show');
 
-    });
+	});
+	$('.profilePage-calender .input-group').on('click', function() {
+		$('#profilePage-date').datepicker('show');
+	});
 
     $('.to_icon2').on('click', function() {
 
@@ -85,16 +88,15 @@ $(document).ready(function() {
 
 	
 
-	$('.datepicker-me-class').on('changeDate', function() {
+	$('.datepicker-me-class,.profilePage-calender .input-group').on('changeDate', function() {
 
-		let valdate = $('#date2 .in').val();
+		let valdate = $('#date2 .in,#profilePage-date .in').val();
 
 		 let scliceByDat = valdate.slice(3,5)
 
 		console.log( scliceByDat );
 
-		
-
+	
 		});
 
 
@@ -158,4 +160,18 @@ $('.accordion-live-course-card .content .live-course .content_course_live .btns 
 	$('.course-content-live_leave').addClass('show_btn').removeClass('hide_btn').html('تم الانصراف').css({width: '105px', 'background-color': '#929292'}).attr('disabled', 'disabled');
 	$('.course-content-live_leave').siblings('button').addClass('show_btn').removeClass('hide_btn');
 });
+
+//profilePage
+	$(".moreBox").slice(0, 3).show();
+	if ($(".profilePage-chart-item:hidden").length != 0) {
+		$("#loadMore").show();
+	}		
+	$("#loadMore").on('click', function (e) {
+		e.preventDefault();
+		$(".moreBox:hidden").slice(0, 5).slideDown();
+		if ($(".moreBox:hidden").length == 0) {
+			$("#loadMore").fadeOut('slow');
+			$(".profilePage-content .profilePage-content-chart1").addClass("hidden-shadow")
+		}
+	});
 });
