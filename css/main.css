@@ -38,13 +38,12 @@ nav .nav{
     display: block;
     margin: 30px auto;
 }
-
-
-
-.color_gray{
+.color-gray{
     color: #6f7070
 }
-
+.rounded{
+	border-radius: 6px !important
+}
 /*
 
 ***********************

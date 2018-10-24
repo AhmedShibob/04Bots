@@ -21,11 +21,23 @@ h1,h2,h3,h4,h5,h6{
 .mycourses-out{
 margin-top: 20px;
 }
+.mycourses-out-group-btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.mycourses-out-group-btns .btn-mycourses-out{
+    background: #0d7df9;
+    color: #fff;
+    margin: 10px;
+    width: 100%
+}
 .mycourses-online .card-courseInfo-content{
     margin-bottom: 0;
 }
 .mycourses-online .starrr{
-margin-bottom: 4px
+    margin-bottom: 4px
 }
 .mycourses-online .mycourses-online-note{
     text-align: center;
@@ -65,7 +77,7 @@ margin-bottom: 4px
     top: 4px;
 }
 .mycourses-gray-header i,.employees-tracker-page .employees-tracker-tab,
-.mycourses-complete-page .btn-exam{
+.leaderBoard .leaderBoard-presentation{
     -webkit-transition: all .4s ease-in-out 0s;
     -moz-transition: all .4s ease-in-out 0s;
     -o-transition: all .4s ease-in-out 0s;
@@ -135,36 +147,45 @@ margin-bottom: 4px
     width: 100% !important
 }
 
-.mycourses-complete-page .mycourses-details-result{
+.mycourses-complete-page .mycourses-details-result,
+.result-after-page .mycourses-details-result{
     padding: 20px;
 }
-.mycourses-complete-page .mycourses-details-precent{
+
+.mycourses-complete-page .mycourses-details-precent,
+.result-after-page .mycourses-details-precent{
     display: flex;
     justify-content: space-around;
     margin-top: 25px;
 }
-.mycourses-complete-page .mycourses-details-precent>div{
+.mycourses-complete-page .mycourses-details-precent>div,
+.result-after-page .mycourses-details-precent>div{
     width: 100%;
     text-align: center;
     
 }
-.mycourses-complete-page .mycourses-details-precent>div:first-of-type{
+.mycourses-complete-page .mycourses-details-precent>div:first-of-type,
+.result-after-page .mycourses-details-precent>div:first-of-type{
     border-left: 1px solid #919191
 }
-.mycourses-complete-page .mycourses-details-precent span{
+.mycourses-complete-page .mycourses-details-precent span,
+.result-after-page .mycourses-details-precent span{
     color: #797979;
     font-weight: bold
 }
-.mycourses-complete-page .mycourses-details-precent h2{
+.mycourses-complete-page .mycourses-details-precent h2,
+.result-after-page .mycourses-details-precent h2{
     color: #62bd3c
 }
-.mycourses-complete-page .mycourses-complete-exam{
+
+.mycourses-complete-page .mycourses-complete-exam
+,.result-after-page .mycourses-complete-exam{
     padding: 10px;
     margin: 15px 0;
     display: inline-block
 }
 
-.mycourses-complete-page .btn-exam{
+.mycourses-complete-page .btn-exam,.result-after-page .btn-exam{
     text-decoration: none;
     border-radius: 4px;
     float: left;
@@ -175,12 +196,23 @@ margin-bottom: 4px
     background: #919191;
     color: #fff
 }
-.mycourses-complete-page .btn-exam:hover{
+.mycourses-complete-page .btn-exam:hover,
+.result-after-page .btn-exam:hover{
     background: #0d7df9
 }
-.mycourses-complete-page .card-padding p{
+.mycourses-complete-page .card-padding p,
+.result-after-page .card-padding p{
     margin-bottom: 0;
     font-size: 13px;
+}
+.result-after-page .result-after  h2{
+    color: #f2b032
+    
+}
+.result-after-page .result-after-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 /*mycourses-out-page*/
 
@@ -744,6 +776,262 @@ margin-bottom: 4px
 /*============== End Style for upcoming and monthly events ===================*/
 
 
+/*============== start Style for leaderboard ===================*/
+.leaderBoard .card-vertical {
+    padding: 5px 20px;
+    position: relative;
+    flex-wrap: wrap
+}
+.leaderBoard .leaderBoard-line{
+    margin: 20px;
+    background: #ddd;
+}
+.leaderBoard .card-vertical-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%
+    
+}
+.leaderBoard  .leaderBoard-icons,
+.profilePage .profilePage-header-icons{
+    display: flex;
+    padding: 0;
+    margin: 0
+}
+.leaderBoard  .leaderBoard-icons li,
+.profilePage .profilePage-header-icons li{
+    margin-left: 4px;
+    width: 20px;
+    height: 20px;
+}   
+.leaderBoard  .leaderBoard-icons .leaderBoard-icons-award,
+.profilePage .profilePage-header-icons-award{
+    background: url('../imgs/award.svg') no-repeat;
+}
+.leaderBoard  .leaderBoard-icons .leaderBoard-icons-smile,
+.profilePage .profilePage-header-icons-smile{
+    background: url('../imgs/smile.svg') no-repeat;
+}
+.leaderBoard .leaderBoard-presentation{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: .5;
+
+}
+.leaderBoard .leaderBoard-presentation:hover{
+    opacity: 1;
+    color: #6f7070;
+}
+.leaderBoard .leaderBoard-presentation .leaderBoard-presentation-icon{
+    background: url('../imgs/presentation.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+.leaderBoard .leaderBoard-clapping{
+    background: url('../imgs/clapping.svg') no-repeat;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 24px;
+    top: 16px;
+}
+
+/*============== end Style for leaderboard ===================*/
+
+/*============== start Style for profilePage===================*/
+.profilePage  .profilePage-header-back{
+  width: 100%;
+  height: 200px;
+  background: url('../imgs/background.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.profilePage .profilePage-header-back .profilePage-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6)
+}
+.profilePage .profilePage-header .align-self-start{
+    position: relative
+}
+.profilePage .profilePage-header .media{
+    padding: 0 30px;
+    position: relative;
+    top: -5rem;
+}
+.profilePage .profilePage-image{
+    position: relative;
+    height: 13rem;
+    width: 10rem;
+    top: -.75rem;
+    border: 4px solid #fdd93a;
+    border-radius: 10px;
+    overflow: hidden
+} 
+.profilePage .profilePage-image-icon{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #fdd93a;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom:-.2rem;
+}
+.profilePage .profilePage-img{
+    height: 100%    ;
+}
+.profilePage .profilePage-header .profilePage-name,
+.profilePage .profilePage-header .profilePage-position{
+    color: #ffff;
+    margin-bottom: 0
+}
+.profilePage .profilePage-header .profilePage-details{
+    position: relative;
+}
+.profilePage .profilePage-header .profilePage-name i{
+    font-size: .8rem
+}
+.profilePage .profilePage-header .profilePage-des{
+    position: relative;
+    top:2.5rem;
+    font-size: 13px;
+}
+.profilePage .profilePage-header .profilePage-des p{
+    margin-bottom: .5rem
+}
+.profilePage .profilePage-nav{
+    background: #f9f9f9f9;
+    font-family: DIN-MEDIUM;
+    margin-bottom: 15px;
+    margin-top: -3.5rem;
+    padding: 0 1.3rem;
+    justify-content: start !important
+}
+.profilePage .profilePage-nav .nav-link{
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+}
+.profilePage .profilePage-certifiate{
+    padding: 2rem 0;
+    cursor: col-resize;
+}
+/*profilePage-content*/
+.profilePage-content{
+    padding:1rem 3rem
+}
+.profilePage-content .profilePage-content-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem
+}
+.profilePage-content .profilePage-content-header-icon{
+    display: inline-block;
+    background: url('../imgs/information-button.svg') no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: inline-block;
+    top: .2rem;
+    right: .4rem
+}
+.profilePage-content .profilePage-calender .input-group {
+    width: 100px;
+    border: 1px solid #0d7df9;
+    border-radius: 4px;
+    color: #0d7df9;
+    padding: .1rem .4rem;
+}
+.profilePage-content .profilePage-calender .form-control {
+    color: #0d7df9;
+    border: 0;
+    text-decoration: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    height: auto;
+    font-size: .8rem;
+    font-weight: bold
+}
+.profilePage-content .profilePage-content-chart1{
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative
+}
+.profilePage-content .profilePage-content-chart1::after{
+    content: '';
+    height: 28%;
+    width: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.74);
+    bottom: 5rem;
+}
+.profilePage-content .profilePage-content-chart1.hidden-shadow::after{
+    display: none
+}
+.profilePage-content .profilePage-chart-item{
+    width: 50%;
+    padding: 2rem;
+    border-bottom: 1px solid #ddd
+
+}
+.profilePage-content .profilePage-chart-item:nth-last-of-type(2),
+.profilePage-content .profilePage-chart-item:nth-last-of-type(3){
+    border-bottom: 0
+}
+.profilePage-content .profilePage-chart-item:nth-of-type(odd){
+    border-left: 1px solid #ddd
+}
+.profilePage-content .profilePage-chart-item-percent .profilePage-percent-number{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0;
+}
+.profilePage-content .profilePage-chart-item-percent .profilePage-percent-title{
+    font-size: 1.5rem;
+    font-family: DIN-MEDIUM
+}
+.profilePage-content .profilePage-chart-loadMore{
+    width: 100%
+}
+.profilePage-content .profilePage-chart-loadMore a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    float: left;
+    margin: 10px;
+    display: block;
+
+}
+.profilePage-content .profilePage-chart-item_hidden{
+    display: none;
+}
+.profilePage-content .profilePage-line{
+    border-top: 2px solid #ddd
+
+}
+/*============== end Style for profilePage===================*/
 .in-progress {
 	direction: rtl;
 	text-align: right;
@@ -773,4 +1061,119 @@ margin-bottom: 4px
 
 	margin-right: 10px;
 
+}
+
+/*============== request-organization===================*/
+.request-organization-page .modal-dialog{
+    max-width: 80%
+
+}
+.request-organization-page .container-fluid{
+    padding: 2rem;
+}
+.request-organization-page .form-row{
+    border: 2px solid #0d7df9;
+    padding: 2rem;
+    position: relative
+}
+.request-organization-page .form-row .form-row-title{
+    position: absolute;
+    top: -1rem;
+    background: #fff;
+    padding: 0 1rem;
+}
+.request-organization-page .modal-title{
+    width: 100%;
+    text-align: center
+}
+.request-organization-page label{
+    font-weight: bold;
+    color: #6f7070;
+    margin-top: 2rem
+}
+.form-control:disabled, .form-control[readonly]{
+    background: #fff
+}
+.request-organization-page .input-group>.custom-select:not(:last-child),
+.request-organization-page .input-group>.form-control:not(:last-child){
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+.request-organization-page .input-group .input-group-addon{
+    color: #6f7070;
+    border: 1px solid #ced4da;
+    border-right: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    padding: .3rem .6rem;
+    
+
+}
+.request-organization-page .group-calender,.request-organization-page .check-group{
+    display: flex
+}
+.request-organization-page .group-calender .request-organization-calender {
+    width: 50%;
+    margin-right: 10px
+}
+.request-organization-page .check-group{
+    justify-content: center
+}
+.request-organization-page .form-check{
+    padding-right: 1.25rem;
+    font-size: 1rem;
+    align-self: center
+}
+
+.request-organization-page textarea.form-control{
+    min-height: 150px
+}
+.request-organization-page .in-progress-danger{
+    border-color: #e75839;
+    background: #fff;
+    margin-right: 10px
+}
+.request-organization-page .modal-footer{
+    width: 100%;
+    padding: 20px;
+    border: 0;
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after{
+  display: none
+}
+.request-organization-page .custom-file-label{
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+.modal-backdrop.show{
+    opacity: .8;
+}
+.modal-backdrop{
+    background: #fff
+}
+.modal2 .modal-content{
+  border: 2px solid #0d7df9;
+  border-radius: 0;
+  width: 70%;
+  margin: auto;
+}
+@media (max-width:650px) {
+    .request-organization-page .modal-dialog{
+        width: 100%;
+        max-width: 100%
+    }
+    .request-organization-page .modal-dialog .col-6,
+    .request-organization-page .modal-dialog .col-4{
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+    .request-organization-page .form-check{
+        font-size: 1rem
+    }
 }
