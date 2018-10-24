@@ -487,7 +487,7 @@
                         <div class="hidden">
                             <div class="mycourses-out-group-btns">
                                 <button class="btn btn-mycourses-out"> الألتحاق بدوره خارجيه جديده <i class="fas fa-plus"></i></button>
-                                <button class="btn btn-mycourses-out"> الألتحاق بدوره خارجيه جديده <i class="fas fa-plus"></i></button>
+                                <button class="btn btn-mycourses-out" data-toggle="modal" data-target="#request-organization"> طلب تنظيم ورشه تدريبيه <i class="fas fa-plus"></i></button>
                             </div>
                             <div class="mycourses-gray-header">
                                 <h5 class="mb-0">
@@ -1138,21 +1138,214 @@
             </div>
         </div>
         <!--========== End mycourses ==========-->
+    </div>
+    <!-- Modal request-organization-->
+    <div class="request-organization-page">
+        <div class="modal fade" id="request-organization" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header  shadow-sm ">
+                        <h2 class="modal-title">طلب تنظيم ورشه تدريبيه</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div>
+                                <form class="needs-validation" novalidate>
+                                    <div class="form-row">
+                                        <h5 class="form-row-title">بيانات تنظيم ورشه تدريبيه</h5>
+                                        <div class="col-6">
+                                            <label for="validationCustom01">العنوان</label>
+                                            <input type="text" class="form-control" id="validationCustom01" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="validationCustom02">مده الأنعقاد</label>
+                                            <div class="input-group date request-organization-calender">
+                                                    <input type="date" id="validationCustom02" class="form-control" placeholder="" required>
+                                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                            </div>
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <!--Date Picker JS-->
-        <script src="js/plugin/bootstrap-datapicker.js"></script>
-        <!--Owl Carousel JS-->
-        <script src="js/plugin/owl-min.js"></script>
-        <!--Start for rating JS-->
-        <script src="js/plugin/stars.js"></script>
-        <!--Calendar page JS-->
-        <script src="js/calendar.js"></script>
-        <!--Main js for all bot-->
-        <script src="js/training.js"></script>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="validationCustom03"> المرفقات</label>
+                                            <div class="input-group">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputFile01">
+                                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                </div>
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-addon" id="inputFile01"><i class="fas fa-file-invoice"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <label for="validationCustom04">مكان الأنعقاد</label>
+                                            <input type="text" class="form-control" id="validationCustom04" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+
+                                            <label for="validationCustom05">تاريخ الأنتهاء</label>
+                                            <div class="group-calender">
+                                                <div class="input-group date request-organization-calender">
+                                                        <input type="date" id="validationCustom05" class="form-control" placeholder="" required>
+                                                    <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                                <div class="input-group date request-organization-calender">
+                                                        <input type="date" id="validationCustom055" class="form-control" placeholder="" required>
+                                                    <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12">
+
+                                            <label for="validationCustom11"> التاريخ المفتوح للأنعقاد</label>
+                                            <div class="group-calender">
+                                                <div class="input-group date request-organization-calender">
+                                                        <input type="date" id="validationCustom11" class="form-control" placeholder="" required>
+                                                    <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                                <div class="input-group date request-organization-calender">
+                                                        <input type="date" id="validationCustom111" class="form-control" placeholder="" required>
+                                                    <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group col-12 check-group">
+                                               
+                                               
+                                            <div class="form-check">
+                                                    <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio1"> طلب ضيافه</label>
+                                                          </div>
+                                                </label>
+                                                <div class="invalid-feedback">
+                                                    You must agree before submitting.
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                    <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio2">ترشيح محاضر معين للدوره المطلوبه</label>
+                                                          </div>
+                                                <div class="invalid-feedback">
+                                                    You must agree before submitting.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="validationCustom06">عنوان الدوره وهدفها</label>
+                                            <textarea type="text" class="form-control" id="validationCustom06" required></textarea>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="validationCustom07">الفئه المستهدفه</label>
+                                            <textarea type="text" class="form-control" id="validationCustom07" required></textarea>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="validationCustom08">عدد المشاركين</label>
+                                            <input type="text" class="form-control" id="validationCustom08" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="validationCustom09">مقدم الطلب</label>
+                                            <input type="text" class="form-control" id="validationCustom09" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="validationCusto10">رقم الهاتف</label>
+                                            <input type="text" class="form-control" id="validationCustom10" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary" id="request-organization_save">حفظ الطلب</button>
+                                        <button type="button" class="btn in-progress-danger" data-dismiss="modal">الغاء</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--22.2 page-->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade modal2" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class=" text-center">
+      هل ترغب  فى ان تكون منسق للدوره ؟
+        </h2>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">نعم </button>
+                        <button type="button" class="btn in-progress-danger" data-dismiss="modal">لا </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!--Date Picker JS-->
+    <script src="js/plugin/bootstrap-datapicker.js"></script>
+    <!--Owl Carousel JS-->
+    <script src="js/plugin/owl-min.js"></script>
+    <!--Start for rating JS-->
+    <script src="js/plugin/stars.js"></script>
+    <!--Calendar page JS-->
+    <script src="js/calendar.js"></script>
+    <!--Main js for all bot-->
+    <script src="js/training.js"></script>
 </body>
 
 </html>

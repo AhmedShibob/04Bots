@@ -1071,3 +1071,118 @@ margin-top: 20px;
 	margin-right: 10px;
 
 }
+
+/*============== request-organization===================*/
+.request-organization-page .modal-dialog{
+    max-width: 80%
+
+}
+.request-organization-page .container-fluid{
+    padding: 2rem;
+}
+.request-organization-page .form-row{
+    border: 2px solid #0d7df9;
+    padding: 2rem;
+    position: relative
+}
+.request-organization-page .form-row .form-row-title{
+    position: absolute;
+    top: -1rem;
+    background: #fff;
+    padding: 0 1rem;
+}
+.request-organization-page .modal-title{
+    width: 100%;
+    text-align: center
+}
+.request-organization-page label{
+    font-weight: bold;
+    color: #6f7070;
+    margin-top: 2rem
+}
+.form-control:disabled, .form-control[readonly]{
+    background: #fff
+}
+.request-organization-page .input-group>.custom-select:not(:last-child),
+.request-organization-page .input-group>.form-control:not(:last-child){
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+.request-organization-page .input-group .input-group-addon{
+    color: #6f7070;
+    border: 1px solid #ced4da;
+    border-right: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    padding: .3rem .6rem;
+    
+
+}
+.request-organization-page .group-calender,.request-organization-page .check-group{
+    display: flex
+}
+.request-organization-page .group-calender .request-organization-calender {
+    width: 50%;
+    margin-right: 10px
+}
+.request-organization-page .check-group{
+    justify-content: center
+}
+.request-organization-page .form-check{
+    padding-right: 1.25rem;
+    font-size: 1rem;
+    align-self: center
+}
+
+.request-organization-page textarea.form-control{
+    min-height: 150px
+}
+.request-organization-page .in-progress-danger{
+    border-color: #e75839;
+    background: #fff;
+    margin-right: 10px
+}
+.request-organization-page .modal-footer{
+    width: 100%;
+    padding: 20px;
+    border: 0;
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after{
+  display: none
+}
+.request-organization-page .custom-file-label{
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+.modal-backdrop.show{
+    opacity: .8;
+}
+.modal-backdrop{
+    background: #fff
+}
+.modal2 .modal-content{
+  border: 2px solid #0d7df9;
+  border-radius: 0;
+  width: 70%;
+  margin: auto;
+}
+@media (max-width:650px) {
+    .request-organization-page .modal-dialog{
+        width: 100%;
+        max-width: 100%
+    }
+    .request-organization-page .modal-dialog .col-6,
+    .request-organization-page .modal-dialog .col-4{
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+    .request-organization-page .form-check{
+        font-size: 1rem
+    }
+}

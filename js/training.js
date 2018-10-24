@@ -72,7 +72,6 @@ $(document).ready(function() {
 		});
 
 		$('.card-react-calenderImg').on('click', function() {
-
 			$('#date2').datepicker('show');
 
 	});
@@ -86,16 +85,16 @@ $(document).ready(function() {
 
 	});
 
+
+
+
+});
 	
 
 	$('.datepicker-me-class,.profilePage-calender .input-group').on('changeDate', function() {
-
 		let valdate = $('#date2 .in,#profilePage-date .in').val();
-
 		 let scliceByDat = valdate.slice(3,5)
-
 		console.log( scliceByDat );
-
 	
 		});
 
@@ -122,8 +121,6 @@ $(document).ready(function() {
   });
 
   $('.owl-stage .owl-item').removeClass("owl-item").addClass("owel-item--custom");
-
-});
 
 
 // function related to live course page---
@@ -173,5 +170,23 @@ $('.accordion-live-course-card .content .live-course .content_course_live .btns 
 			$("#loadMore").fadeOut('slow');
 			$(".profilePage-content .profilePage-content-chart1").addClass("hidden-shadow")
 		}
-	});
+	});                                 
 });
+	 // JavaScript for disabling form submissions if there are invalid fields
+	 (function() {
+		'use strict';
+		window.addEventListener('load', function() {
+			// Fetch all the forms we want to apply custom Bootstrap validation styles to
+			var forms = document.getElementsByClassName('needs-validation');
+			// Loop over them and prevent submission
+			var validation = Array.prototype.filter.call(forms, function(form) {
+				form.addEventListener('submit', function(event) {
+					if (form.checkValidity() === false) {
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					form.classList.add('was-validated');
+				}, false);
+			});
+		}, false);
+	})();
