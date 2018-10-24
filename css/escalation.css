@@ -1,0 +1,250 @@
+h1,h2,h3,h4,h5,h6{
+    color: #6f7070;
+    font-family: DIN-MEDIUM;
+}
+
+.nav .nav-link.active,.btn-link:hover{
+    color:#fb4244;
+}
+
+.nav .nav-link.active{
+    border-bottom: 2px solid #fb4244;
+    font-family:  DIN-MEDIUM;
+}
+
+nav {
+    padding-right: 15px;
+}
+
+.escalationHeader{
+    display: flex;
+    width: 100%;
+    padding: 15px 30px 0;
+}
+
+
+.escalationHeader-filter{
+    order: 2;
+    width: 100%;
+    text-align: left;
+}
+
+.escalationHeader-filter-div{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    float: left;
+}
+
+.escalationHeader-filter-div_color{
+    background-color: #f2f2f2;
+}
+
+.escalationHeader-filter-img{
+    height: 30px;
+    position: relative;
+    top: 58%;
+    transform: translateY(-50%);
+    display: block;
+    margin: auto;
+}
+
+.escalationHeader-title{
+    order: 1;
+    width: 100%;
+}
+
+.escalationHeader-title-h3{
+    font-family: inherit;
+    font-size: 2.2rem;
+    color: #c4c4c4;
+}
+
+.escalationBody{
+    padding: 0 30px;
+}
+
+.escalationCard {
+     border: 1px solid rgba(0,0,0,0); 
+     margin: 5px 0;
+}
+
+.escalationCard-content{
+    font-size: .8rem;
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+
+}
+
+.escalationCard-title{
+    padding: 1rem 1rem 0;
+    color: #fb4244;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+ 
+}
+
+.escalation-day{
+    margin-bottom: 5px;
+}
+
+.escalation-day-span{
+    color: #8d8d8d;
+    font-size: 1rem;
+    
+}
+
+.escalationCard-date{
+    color: #8d8d8d;
+    font-size: 1rem;
+    font-family: DIN-LIGHT,sans-serif;
+    text-align: left;
+    padding: 10px 30px;
+}
+
+.escalationHeader-filter .dropdown-toggle::after{
+    display: none;
+}
+
+.form-group{
+    text-align: right;
+}
+
+.escalationHeader-filter form{
+    color: #fb4244;
+}
+.form-control{
+    border: 1px solid hsla(359, 96%, 62%, 0.678);
+}
+
+.escalationHeader-filter-div:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #f3f3f363;
+    opacity: 1;
+    border: 1px solid hsla(359, 96%, 62%, 0.42);
+}
+
+.applications-blue{
+    border-bottom: 2px solid #0683ff !important;
+    color: #0683ff !important;
+
+}
+
+.applicationsCard-title{
+    padding: 1rem 1rem 0;
+    color: #0683ff;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+.progress-bar-wrapper-applications .status-bar .current-status{
+    background: #0683ff;
+}
+.progress-bar-wrapper-applications .progress-barX .section{
+    color: #0683ff;
+}
+ 
+
+@keyframes changeBackgroundblue {
+    from {background: #f2f2f2}
+    to {background: #0683ff}
+}
+
+@keyframes changeBackgroundgreen {
+    from {background: #f2f2f2}
+    to {background: #40bb48}
+}
+@keyframes changeBackgrounred {
+    from {background: #f2f2f2}
+    to {background: #fb4244}
+}
+
+
+.progress-bar-wrapper-applications .progress-barX li.section.visited:before{
+    content: '\2714';
+    animation: changeBackgroundblue .5s linear;
+    animation-fill-mode: forwards;
+}
+
+.progress-bar-wrapper-applications .progress-barX li.section.visited.current:before {
+    box-shadow: 0 0 0 2px #0683ff;
+}
+
+.progress-bar-wrapper-applications .progress-barX li.section.visited.current.approved:before {
+    box-shadow: 0 0 0 2px #40bb48;
+}
+
+.progress-bar-wrapper-applications .progress-barX li.section.visited.approved:before {
+    content: '\2714';
+    animation: changeBackgroundgreen .5s linear;
+    animation-fill-mode: forwards;
+}
+
+
+.progress-bar-wrapper-applications .progress-barX .approved {
+    color: #40bb48;
+}
+
+
+.progress-bar-wrapper-applications .progress-barX li.section.visited.current.rejected:before {
+    box-shadow: 0 0 0 2px #fb4244;
+}
+
+.progress-bar-wrapper-applications .progress-barX li.section.visited.rejected:before {
+    content: 'x';
+    animation: changeBackgrounred .5s linear;
+    animation-fill-mode: forwards;
+    color: #fff;
+    line-height: 23px;
+}
+
+.progress-bar-wrapper-applications .progress-barX .rejected {
+    color: #fb4244;
+}
+
+.progress-barX{
+    margin-bottom: 0;
+}
+
+.escalationCard-data {
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+.escalationCard-data span{
+    font-size: 15px;
+    display: inline-block;
+    font-family: DIN-LIGHT,sans-serif;
+    font-weight: bold;
+}
+
+.escalationCard-data span span{
+    font-size: 15px;
+    display: inline-block;
+    font-family: DIN-LIGHT,sans-serif;
+    font-weight: bold;
+}
+
+.escalationCard-data span img{
+    height: 20px;
+    vertical-align: bottom;    
+}
+
+.escalationCard-arrowDown{
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    float: left;
+}
+
+.escalationCard-arrowDown img{
+    height: 15px;
+}

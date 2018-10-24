@@ -1,0 +1,138 @@
+h1,h2,h3,h4,h5,h6{
+    color: #2ca647;
+    font-family: DIN-MEDIUM;
+   }
+
+.nav .nav-link.active,.btn-link:hover{
+    color:#2ca647;
+}
+.nav .nav-link.active{
+    border-bottom: 2px solid #2ca647;
+    font-family:  DIN-MEDIUM;
+}
+
+.tab-content{
+    margin-bottom: 5px;
+}
+
+.card-body .wrap-content p {
+    font-size: 12px;
+}
+
+.card-body .wrap-content a{
+    display: block;
+    text-align: left;
+    color: #2ca647;
+    font-family: DIN-MEDIUM;
+    font-weight: 200;
+    font-size: 18px;
+    width: 56%;
+    margin-right: auto;
+    transition:  all 0.1s;
+    margin-left: 10px;
+
+
+}
+.card-body .wrap-content a:hover{
+    transform: scale(1.1);
+    color: #2ca647;
+    cursor: pointer;
+}
+
+.card-body .wrap-content a img{
+    height: 25px;
+    margin-right: 5px;
+}
+
+.btn-new-survey{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: DIN-MEDIUM ,sans-serif;
+    padding: 8px;
+
+}
+
+.card-body {
+    margin:  0;
+    padding: 0;
+    border-radius: 15px!important;
+    overflow: hidden;
+
+}
+
+#nav-Survey{
+    padding: 0 15px;
+}
+
+.card{
+    border-radius: 0;
+    border: 0;
+}
+
+.card-header{
+    border-radius: 0;
+    border-bottom: 0;
+    padding: 0; 
+}
+
+.mb-0 .btn-link{
+    width: 100%;
+    text-align: right;
+    color: #2ca647;
+    text-decoration: none;
+}
+
+.wrap-content .progress{
+    width: 90%;
+    margin: auto;
+}
+
+.mysurveyList{
+    padding: 15px;
+}
+
+.card-container{
+    padding: 10px 15px;
+}
+
+.complete-my-survey-btn{
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 10px;
+}
+
+.mysurveyList .card-body{
+    margin: 15px 0;
+}
+.surveyList .card-body{
+    margin: 15px 0;
+}
+
+.complete-my-survey-btn-text{
+    float: right;
+}
+
+.complete-my-survey-btn-img{
+    float: left;
+    margin-left: 20px;
+    transition:  all 0.1s;
+}
+
+.complete-my-survey-btn-img img{
+    height: 20px;
+}
+
+.complete-my-survey-btn:hover  .complete-my-survey-btn-img{
+    margin-left: 15px;
+}
+
+.btn-link-span-arrow {
+    float: left;
+}
+
+.btn-link-span-arrow img{
+    height: 15px;
+    transition: all 0.4s;
+}

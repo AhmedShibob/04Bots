@@ -1,0 +1,15 @@
+<svg id="Group_3_Copy_4" data-name="Group 3 Copy 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.731 32.731">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2ca647;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Oval" class="cls-1" d="M16.365,0A16.365,16.365,0,1,1,0,16.365,16.365,16.365,0,0,1,16.365,0Z"/>
+  <path id="Combined_Shape" data-name="Combined Shape" class="cls-2" d="M.487,3.862a1.7,1.7,0,0,1,2.461,0L6.271,7.2,12.917.525a1.7,1.7,0,0,1,2.461,0,1.721,1.721,0,0,1,0,2.471L7.5,10.864a1.779,1.779,0,0,1-2.461,0L.528,6.333A1.758,1.758,0,0,1,.487,3.862Z" transform="translate(8.653 10.945)"/>
+</svg>
